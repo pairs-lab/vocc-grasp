@@ -1,0 +1,24 @@
+{
+  "source_rows": 907,
+  "rows_removed": 0,
+  "filtering_policy": "Only schema/range validity checks were applied. No label- or outcome-driven sample removal was performed. mean_cand and var_cand were omitted because they are constant in the source file.",
+  "split_policy": "Scene-disjoint split by image ID, selected deterministically to match row count, label rate, probability-band distribution, and N_cand-band distribution. Model validation scores were not used to select the split.",
+  "train": {
+    "edges": 726,
+    "scenes": 283,
+    "positive_rate": 0.6900826446280992,
+    "probability_min": 0.4,
+    "probability_max": 0.98,
+    "N_cand_min": 1,
+    "N_cand_max": 13
+  },
+  "validation": {
+    "edges": 181,
+    "scenes": 70,
+    "positive_rate": 0.712707182320442,
+    "probability_min": 0.55,
+    "probability_max": 0.98,
+    "N_cand_min": 1,
+    "N_cand_max": 13
+  }
+}

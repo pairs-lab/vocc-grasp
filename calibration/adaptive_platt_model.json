@@ -1,0 +1,13 @@
+{
+  "model_type": "ncand_adaptive_platt",
+  "formula": "phi=(log1p(N_cand)-mu_phi)/sigma_phi; a_scene=exp(alpha0+alphaN*phi); p_cal=sigmoid(a_scene*logit(p_raw)+c0+cN*phi)",
+  "alpha0": -0.3078797653903193,
+  "alphaN": 0.05107449746248394,
+  "c0": -0.6192534285450837,
+  "cN": 0.04536984965812933,
+  "mu_phi": 1.5798759054386606,
+  "sigma_phi": 0.4440773510867776,
+  "regularization": 1.0,
+  "eps": 1e-06,
+  "penalized_train_objective": 0.56880872403743
+}

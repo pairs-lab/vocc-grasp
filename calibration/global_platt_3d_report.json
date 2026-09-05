@@ -1,0 +1,95 @@
+{
+  "model": {
+    "model_type": "global_platt",
+    "formula": "sigmoid(a * logit(p_raw) + c)",
+    "a": 0.10625846807002207,
+    "c": -0.7735414541005565,
+    "eps": 1e-06,
+    "train_nll": 0.6108994745132206
+  },
+  "data": {
+    "train_edges": 2042,
+    "valid_edges": 445,
+    "train_scenes": 364,
+    "valid_scenes": 91
+  },
+  "train": {
+    "raw": {
+      "nll": 0.8281558134865851,
+      "brier": 0.26252753833986286,
+      "ece10": 0.1632605778648384
+    },
+    "calibrated": {
+      "nll": 0.6108994745132206,
+      "brier": 0.21027515976395597,
+      "ece10": 0.025488061460830998
+    }
+  },
+  "validation": {
+    "raw": {
+      "nll": 0.9055346461979663,
+      "brier": 0.27994340388764044,
+      "ece10": 0.18887348314606747
+    },
+    "calibrated": {
+      "nll": 0.6230676930674633,
+      "brier": 0.21599830939757184,
+      "ece10": 0.01465359995307259
+    }
+  },
+  "generalization_gap": {
+    "nll_valid_minus_train": 0.012168218554242771,
+    "brier_valid_minus_train": 0.005723149633615865
+  },
+  "monotonicity": {
+    "passed": true,
+    "minimum_increment": 4.5840669564700676e-06,
+    "output_min": 0.09608029075161718,
+    "output_max": 0.6669613229528664
+  },
+  "validation_scene_bootstrap": {
+    "nll": {
+      "mean_delta_cal_minus_raw": -0.27507063536847304,
+      "ci95": [
+        -0.4779574624274743,
+        -0.10348741551877877
+      ]
+    },
+    "brier": {
+      "mean_delta_cal_minus_raw": -0.062217732331311976,
+      "ci95": [
+        -0.10717412876685287,
+        -0.0204315405198681
+      ]
+    },
+    "ece10": {
+      "mean_delta_cal_minus_raw": -0.15329653193441342,
+      "ci95": [
+        -0.21861483425990358,
+        -0.06632218084242476
+      ]
+    }
+  },
+  "synthetic_recovery": {
+    "repeats": 100,
+    "note": "Parametric numerical recovery test; not used to filter or tune the real validation set.",
+    "a": {
+      "mean": 0.10722659824813816,
+      "std": 0.028795251869630625,
+      "q05": 0.06047717785294686,
+      "q95": 0.15916569116423412
+    },
+    "c": {
+      "mean": -0.7700461303634185,
+      "std": 0.05725481611733358,
+      "q05": -0.8562846873952819,
+      "q95": -0.6792383786741375
+    },
+    "synthetic_holdout_nll": {
+      "mean": 0.6143516125439022,
+      "std": 0.012227378175996916,
+      "q05": 0.5964006829357479,
+      "q95": 0.6369087367094732
+    }
+  }
+}

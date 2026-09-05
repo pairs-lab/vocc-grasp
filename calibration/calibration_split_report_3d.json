@@ -1,0 +1,15 @@
+{
+  "source_rows": 2487,
+  "source": "logs/uoais_pipeline_train_calib_550_fixed (image_graphs/*.json edges_all, rebuilt via run_uoais_pipeline.rebuild_edges_v2, labeled against gt_occlusion_paths)",
+  "split_policy": "Scene-disjoint split by image ID, seeded random 80/20 (seed=20260802). Not distribution-matched by hand like the VLM split.",
+  "train": {
+    "edges": 2042,
+    "scenes": 364,
+    "positive_rate": 0.3046033300685602
+  },
+  "validation": {
+    "edges": 445,
+    "scenes": 91,
+    "positive_rate": 0.3235955056179775
+  }
+}

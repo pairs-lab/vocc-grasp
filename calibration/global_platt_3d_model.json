@@ -1,0 +1,8 @@
+{
+  "model_type": "global_platt",
+  "formula": "sigmoid(a * logit(p_raw) + c)",
+  "a": 0.10625846807002207,
+  "c": -0.7735414541005565,
+  "eps": 1e-06,
+  "train_nll": 0.6108994745132206
+}
