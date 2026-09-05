@@ -220,8 +220,8 @@ python demo.py --case img000071_q1
 ```
 
 <p align="center">
-  <img src="assets/pipeline_example.png" width="300" alt="reasoning" />
-  <img src="assets/grasp_orbit.gif" width="300" alt="grasp pose" />
+  <img src="assets/deploy_step1.gif" width="300" alt="step1" />
+  <img src="assets/deploy_step2.gif" width="300" alt="step1" />
 </p>
 
 `output/img000071_q1/` holds the renders, the orbit GIF, `grasp_pose.json` (6-DoF, camera frame)
