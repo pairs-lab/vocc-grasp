@@ -1,6 +1,6 @@
 # CPOR-Grasp: Calibrated Probabilistic Obstruction Reasoning with Vision-Language Models for Grasping in Clutter
 
-Repository for VOCC-Grasp. Given an RGB-D frame and a free-form request, the method predicts
+Repository for CPOR-Grasp. Given an RGB-D frame and a free-form request, the method predicts
 which object must be removed first to reach the target, and returns a 6-DoF grasp for it.
 
 A VLM and an amodal segmenter each propose occlusion edges. Both sources are calibrated and
@@ -34,8 +34,8 @@ evaluation and deployment. Nothing is refit or retrained per domain.
 
 | Resource | Link | Description |
 | --- | --- | --- |
-| Synthetic dataset | [Hugging Face](https://huggingface.co/datasets/chiencn/vocc_synthetic) | UnoBench `test_GT_small_1800` split: 1800 cases, 1400 images. |
-| Real dataset | [Hugging Face](https://huggingface.co/datasets/chiencn/vocc_real) | MetaGraspNet-V2 evaluation subset: 838 cases, 511 scenes. |
+| Synthetic dataset | [Hugging Face](https://huggingface.co/datasets/chiencn/CPOR_synthetic) | UnoBench `test_GT_small_1800` split: 1800 cases, 1400 images. |
+| Real dataset | [Hugging Face](https://huggingface.co/datasets/chiencn/CPOR_real) | MetaGraspNet-V2 evaluation subset: 838 cases, 511 scenes. |
 
 ## Contents
 
@@ -50,7 +50,7 @@ evaluation and deployment. Nothing is refit or retrained per domain.
 ## Structure
 
 ```text
-vocc-grasp/
+CPOR-grasp/
 |-- demo.py                          RGB-D frame -> grasp pose
 |-- run_gemini_uoais_ref.py          the method: VLM reasoning over a UOAIS geometry table
 |-- run_gemini_uoais_ref_batch.py    batch driver, synthetic
@@ -71,10 +71,10 @@ Create the Conda environment and build everything:
 
 ```bash
 ./scripts/install.sh uoais
-conda activate vocc
+conda activate CPOR
 ```
 
-This creates the env `vocc` (python 3.10), installs torch 2.7.0 cu128 and `requirements.txt`,
+This creates the env `CPOR` (python 3.10), installs torch 2.7.0 cu128 and `requirements.txt`,
 compiles the FGC-GraspNet CUDA extensions, and installs detectron2 and AdelaiDet. Tested on an
 RTX 5060 Ti (sm_120) with CUDA 12.8.
 
@@ -97,23 +97,23 @@ repository. Download them to regenerate predictions from raw RGB-D, or to run th
 
 ### Synthetic
 
-Download UnoBench from [Hugging Face](https://huggingface.co/datasets/chiencn/vocc_synthetic):
+Download UnoBench from [Hugging Face](https://huggingface.co/datasets/chiencn/CPOR_synthetic):
 
 ```bash
-hf download chiencn/vocc_synthetic --repo-type dataset --local-dir /tmp/vocc_syn
+hf download chiencn/CPOR_synthetic --repo-type dataset --local-dir /tmp/CPOR_syn
 
 mkdir -p UnoBench/_extracted
 for f in images depth annotations; do
     mkdir -p UnoBench/_extracted/$f
-    tar -xzf /tmp/vocc_syn/$f.tar.gz -C UnoBench/_extracted/$f
+    tar -xzf /tmp/CPOR_syn/$f.tar.gz -C UnoBench/_extracted/$f
 done
-cp /tmp/vocc_syn/meta/gt_for_nlp.json UnoBench/
+cp /tmp/CPOR_syn/meta/gt_for_nlp.json UnoBench/
 ```
 
 Expected layout:
 
 ```text
-vocc-grasp/
+CPOR-grasp/
 |-- UnoBench/gt_for_nlp.json
 |-- UnoBench/subset_difficulty/          (already in this repository)
 `-- UnoBench/_extracted/{images,depth,annotations}/
@@ -122,22 +122,22 @@ vocc-grasp/
 ### Real
 
 Download the MetaGraspNet-V2 subset from
-[Hugging Face](https://huggingface.co/datasets/chiencn/vocc_real):
+[Hugging Face](https://huggingface.co/datasets/chiencn/CPOR_real):
 
 ```bash
-hf download chiencn/vocc_real --repo-type dataset --local-dir /tmp/vocc_real
+hf download chiencn/CPOR_real --repo-type dataset --local-dir /tmp/CPOR_real
 
 for f in scenes images masks_crop masks_full; do
-    tar -xzf /tmp/vocc_real/$f.tar.gz -C .
+    tar -xzf /tmp/CPOR_real/$f.tar.gz -C .
 done
-cp /tmp/vocc_real/meta/real_world_mapping_fixed.json \
-   /tmp/vocc_real/meta/real_object_names.json .
+cp /tmp/CPOR_real/meta/real_world_mapping_fixed.json \
+   /tmp/CPOR_real/meta/real_object_names.json .
 ```
 
 Expected layout:
 
 ```text
-vocc-grasp/
+CPOR-grasp/
 |-- real_world_mapping_fixed.json
 |-- real_object_names.json
 |-- images/image_000000.png
@@ -249,6 +249,13 @@ Check the bundled data and replay the grasp stage:
 python demo_rgbd/verify.py         # integrity only
 python demo_rgbd/verify.py --run   # grasp replay, needs a GPU and the FGC weights
 ```
+
+## Real-world deployment
+
+<p align="center">
+  <img src="assets/pipeline_example.png" width="300" alt="reasoning" />
+  <img src="assets/grasp_orbit.gif" width="300" alt="grasp pose" />
+</p>
 
 ## Configuration
 
