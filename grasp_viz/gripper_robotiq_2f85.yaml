@@ -1,0 +1,56 @@
+# Robotiq 2F-85 -- the gripper the UR5e bin simulation drives.
+#
+# Every number here was measured in-sim rather than read off the URDF: the 2F-85 is
+# attached by a constraint with its own frame offset, and its four-bar linkage moves the
+# pads as the jaws close, so the kinematic chain alone does not give the numbers that
+# matter for aiming. Source: robot_sim/config.py.
+
+name: robotiq_2f85
+mesh_units: metres
+
+frame:
+  # matches grasp_viz's convention: rotation column 2 is the approach
+  approach_axis:      [0, 0, 1]
+  closing_axis:       [1, 0, 0]
+  finger_width_axis:  [0, 1, 0]
+
+# full stroke of the jaws
+width: 0.085
+# tool_tip -> pad centre along tool +z, jaws OPEN. The linkage walks the pad midpoint
+# from 0.1535 (open) to 0.167 (closed); the approach happens open, so the open figure is
+# the one to aim with.
+depth: 0.1535
+
+tcp:
+  position: [0, 0, 0.1535]
+
+fingers:
+  # pad footprint, used for the required-aperture window in grasp_viz.aperture
+  clamping_face_length: 0.037
+  clamping_face_width:  0.022
+  # how far the fingertips reach past the pad midpoint along the approach. Measured,
+  # not derived from clamping_face_length: the pads sit close to the tips and the
+  # linkage swings the fingers inward as they close, so the reach grows with closure --
+  # 1.4 mm wide open, 4.8 mm at a 50 mm span. Worst of the range.
+  # Using clamping_face_length here overstated it by 32 mm and rejected sound poses as
+  # floor crashes: a banana lying flat reported -4 mm clearance when it had about +28.
+  tip_reach: 0.005
+
+grasp_filter:
+  max_grasp_width: 0.085
+  width_margin: 0.005          # effective cap 0.080 m
+  # FreeGrasp's own 30 deg cone. A tighter one was tried (12, then 25 deg) to stop the
+  # fingers sweeping sideways on the way down, but with rate-limited motion and a
+  # two-speed descent that is no longer the failure mode, and a tight cone rejects the
+  # *tilted* top object of a pile -- exactly the grasp this project is about. Measured
+  # on the heap: minimum available approach is 18 deg for the apple, 22 for the banana,
+  # 5-23 for a leaning brick.
+  top_down_angle_deg: 30.0
+  # FreeGrasp vetoes a grasp when few candidates survive the cone, which is common once
+  # the aperture filter is this tight. Disabled here; collision + aperture carry it.
+  top_down_score_factor: null
+
+approach:
+  pregrasp_offset: 0.10        # back off along -approach before descending
+  jaw_clearance: 0.015         # how much wider than the grasp the jaws pre-open
+  min_grasp_width: 0.008       # pad separation that counts as holding something

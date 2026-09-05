@@ -1,0 +1,114 @@
+# Gripper config for the THO / PA1 parallel jaw -- the end effector the robot
+# will actually deploy with.  Field names follow GraspGen's config/grippers/*.yaml
+# (width, depth) so this can drop into that pipeline, plus the extra fields the
+# FGC path and the collision check need.
+#
+# SOURCE OF TRUTH
+#   Urdf-THO-Gripper cat ot PA1/urdf/Urdf-THO-Gripper cat ot PA1.urdf
+#   Urdf-THO-Gripper cat ot PA1/meshes/base_link.STL   (binary STL, METRES)
+#
+# Every geometric number below was measured off base_link.STL, not read from the
+# URDF: the URDF carries no usable kinematics (see `unresolved` at the bottom).
+
+name: tho_pa1
+source_component: "ST-EFG-20NK"       # SolidWorks component name in the export CSV
+urdf: "Urdf-THO-Gripper cat ot PA1/urdf/Urdf-THO-Gripper cat ot PA1.urdf"
+collision_mesh: "Urdf-THO-Gripper cat ot PA1/meshes/base_link.STL"
+mesh_units: metres                     # STL is already in metres; do NOT scale by 1e-3
+
+# ---------------------------------------------------------------- frame
+# base_link, as exported.  The flange plane sits at z ~ 0 and the fingers point
+# along +z, so the axis convention already matches what grasp_viz expects:
+#   +z = approach (column 2 of `rotation` in grasp_pose.json)
+#    x = closing axis (jaws travel along x)
+#    y = finger width
+frame:
+  approach_axis: [0, 0, 1]
+  closing_axis: [1, 0, 0]
+  finger_width_axis: [0, 1, 0]
+
+# ---------------------------------------------------------------- key scalars
+# `width` / `depth` mirror GraspGen's gripper yaml meaning.
+width: 0.100       # WORKING ASSUMPTION set by the user (2026-08-26): max jaw
+                   # aperture ~100 mm.  The mesh models 70.9 mm, but custom
+                   # 3D-printed fingers are planned, so the aperture is a design
+                   # choice now rather than a measurement.  See unresolved.stroke.
+depth: 0.2383      # base_link origin -> fingertip plane along +z
+
+tcp:
+  # Fingertip plane.  A grasp pose places this point at the contact centre.
+  position: [0.0, 0.0, 0.2383]
+
+# ---------------------------------------------------------------- fingers
+fingers:
+  count: 2
+  tip_z: 0.2383              # fingertips
+  clamping_face_z_min: 0.190 # below this the fingers step inward, gap narrows
+  clamping_face_length: 0.0483
+  clamping_face_width: 0.0440      # along y, spans -0.0220 .. +0.0220
+  finger_thickness: 0.0051         # along x, at the clamping face
+  outer_span: 0.0810               # outer edge to outer edge at the faces
+  # The gap is not constant along z -- there is a stepped recess near the root:
+  #   z 15.5 cm  solid (no gap)
+  #   z 16.0 cm  0.0119 m
+  #   z 17.0 cm  0.0179 m
+  #   z 17.5 cm  0.0472 m
+  #   z >= 19 cm 0.0709 m  <- the parallel clamping faces used for grasping
+  # Use 0.0709 for grasp width checks; use the mesh itself for collision.
+  gap_profile_note: "stepped; only z >= 0.19 m is a parallel clamping face"
+
+# ---------------------------------------------------------------- envelope
+# For reach / collision sanity checks against the bin (interior depth ~0.095 m).
+bounding_box:
+  min: [-0.0540, -0.0440, -0.0100]
+  max: [ 0.0540,  0.0315,  0.2383]
+  extent: [0.1080, 0.0755, 0.2483]
+body_max_half_width: 0.0540     # at z = 0.104 m, the widest part of the body
+finger_reach_below_tip: 0.0483  # how far into the bin the jaws can descend
+
+# ---------------------------------------------------------------- inertial
+# Straight from the URDF base_link.
+inertial:
+  mass: 0.27924
+  com: [0.00098265, -0.0019324, 0.095063]
+  inertia: {ixx: 0.00013384, ixy: 1.5856e-06, ixz: 1.3082e-06,
+            iyy: 0.00019603, iyz: -8.9439e-07, izz: 0.00012547}
+
+# ---------------------------------------------------------------- grasp filter
+# FGC predicts a per-grasp width; reject anything the jaws cannot span.
+# Margin keeps the fingers from touching the object on approach.
+grasp_filter:
+  max_grasp_width: 0.100    # = width above (user-set working assumption)
+  width_margin: 0.005
+  # Measured against the 84 FGC grasps in grasp_viz_real/:
+  #   cap 0.051 m ->  5/84 usable ( 6%)
+  #   cap 0.071 m -> 15/84 usable (18%)
+  #   cap 0.091 m -> 64/84 usable (76%)
+  # i.e. the aperture assumption dominates deployability -- resolve it first.
+
+# ---------------------------------------------------------------- unresolved
+# These CANNOT be derived from the supplied files.  Confirm against the
+# datasheet or by measuring the hardware before trusting any planned grasp.
+unresolved:
+  stroke:
+    problem: >
+      The URDF joint "Gripper" is revolute with lower=0 upper=0 (a placeholder),
+      and meshes/Empty_Link.STL -- the moving jaw -- is missing from the export,
+      so travel cannot be measured.  base_link.STL captures one static pose and
+      nothing says whether it is fully open, fully closed, or mid-travel.
+    modelled_gap: 0.0709
+    hypothesis: >
+      The EFG-20 family is quoted at 20 mm total stroke.  The exact ST-EFG-20NK
+      variant was not found, so this is unverified.  If it holds, the aperture
+      range is 0.051-0.071 m (modelled = open) or 0.071-0.091 m (modelled =
+      closed).  These two readings differ by 6x in usable-grasp count.
+    action: confirm max aperture, then set width / grasp_filter.max_grasp_width
+  jaw_travel_direction:
+    problem: >
+      URDF axis is [0,0,-1] on a revolute joint, which contradicts a parallel
+      jaw travelling along x.  The exporter emitted a stub joint.
+    assumed: "jaws translate along +/-x, symmetric about x=0"
+  finger_pads:
+    problem: >
+      Whether the modelled fingers are bare or already include pads/jaws is not
+      recorded; pads would reduce the effective aperture.
