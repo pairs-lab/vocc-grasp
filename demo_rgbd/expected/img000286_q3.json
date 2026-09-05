@@ -1,0 +1,78 @@
+{
+  "case": "img000286_q3",
+  "target_id": 1,
+  "tho_pa1": {
+    "label": "wine glass",
+    "funnel": {
+      "raw": 620,
+      "in_mask": 151,
+      "collision_free": 13,
+      "top_down": 2,
+      "note": "no grasp fits 32 mm jaws (closest 51 mm)",
+      "aperture_ok": 0
+    },
+    "grasp_found": false
+  },
+  "fgc_default": {
+    "label": "wine glass",
+    "funnel": {
+      "raw": 620,
+      "in_mask": 151,
+      "collision_free": 31,
+      "top_down": 10,
+      "note": "select top-down",
+      "aperture_ok": 9,
+      "required_aperture": 0.051669
+    },
+    "grasp_found": true,
+    "score": 0.413643,
+    "translation_cam": [
+      0.178722,
+      -0.096644,
+      0.6341
+    ],
+    "rotation_cam": [
+      [
+        -0.955172,
+        -0.174182,
+        0.239389
+      ],
+      [
+        0.168956,
+        -0.984713,
+        -0.042344
+      ],
+      [
+        0.243105,
+        -0.0,
+        0.97
+      ]
+    ],
+    "base": {
+      "grasp_point": [
+        0.72872,
+        0.09664,
+        0.0709
+      ],
+      "tilt_deg": 14.07,
+      "object_width_m": 0.05167,
+      "executable": true,
+      "reject_reason": null,
+      "n_steps": 12,
+      "step_names": [
+        "transit",
+        "open_jaws",
+        "pre",
+        "grasp",
+        "close_jaws",
+        "lift_breakaway",
+        "lift_top",
+        "place_above",
+        "place_drop",
+        "open_jaws",
+        "place_retreat",
+        "home"
+      ]
+    }
+  }
+}

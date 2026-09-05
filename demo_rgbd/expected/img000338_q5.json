@@ -1,0 +1,77 @@
+{
+  "case": "img000338_q5",
+  "target_id": 3,
+  "tho_pa1": {
+    "label": "left coffee filter box",
+    "funnel": {
+      "raw": 673,
+      "in_mask": 278,
+      "collision_free": 14,
+      "top_down": 0,
+      "note": "no top-down grasp within 30 deg (closest 33)"
+    },
+    "grasp_found": false
+  },
+  "fgc_default": {
+    "label": "left coffee filter box",
+    "funnel": {
+      "raw": 673,
+      "in_mask": 278,
+      "collision_free": 75,
+      "top_down": 14,
+      "note": "select top-down",
+      "aperture_ok": 14,
+      "required_aperture": 0.021501
+    },
+    "grasp_found": true,
+    "score": 0.267206,
+    "translation_cam": [
+      -0.036119,
+      -0.012646,
+      0.579533
+    ],
+    "rotation_cam": [
+      [
+        0.782799,
+        -0.520513,
+        -0.341017
+      ],
+      [
+        0.413854,
+        0.844726,
+        -0.339357
+      ],
+      [
+        0.464705,
+        0.124517,
+        0.876667
+      ]
+    ],
+    "base": {
+      "grasp_point": [
+        0.51388,
+        0.01265,
+        0.12547
+      ],
+      "tilt_deg": 28.76,
+      "object_width_m": 0.0215,
+      "executable": true,
+      "reject_reason": null,
+      "n_steps": 12,
+      "step_names": [
+        "transit",
+        "open_jaws",
+        "pre",
+        "grasp",
+        "close_jaws",
+        "lift_breakaway",
+        "lift_top",
+        "place_above",
+        "place_drop",
+        "open_jaws",
+        "place_retreat",
+        "home"
+      ]
+    }
+  }
+}

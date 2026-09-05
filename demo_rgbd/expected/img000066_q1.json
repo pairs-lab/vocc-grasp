@@ -1,0 +1,77 @@
+{
+  "case": "img000066_q1",
+  "target_id": 2,
+  "tho_pa1": {
+    "label": "brown cardboard box",
+    "funnel": {
+      "raw": 361,
+      "in_mask": 298,
+      "collision_free": 7,
+      "top_down": 0,
+      "note": "no suitable grasp found"
+    },
+    "grasp_found": false
+  },
+  "fgc_default": {
+    "label": "brown cardboard box",
+    "funnel": {
+      "raw": 361,
+      "in_mask": 298,
+      "collision_free": 81,
+      "top_down": 11,
+      "note": "select top-down",
+      "aperture_ok": 9,
+      "required_aperture": 0.019082
+    },
+    "grasp_found": true,
+    "score": 0.110408,
+    "translation_cam": [
+      -0.009409,
+      -0.003938,
+      0.542567
+    ],
+    "rotation_cam": [
+      [
+        -0.965715,
+        -0.248355,
+        0.075593
+      ],
+      [
+        0.259604,
+        -0.923867,
+        0.281202
+      ],
+      [
+        0.0,
+        0.291185,
+        0.956667
+      ]
+    ],
+    "base": {
+      "grasp_point": [
+        0.54059,
+        0.00394,
+        0.16243
+      ],
+      "tilt_deg": 16.93,
+      "object_width_m": 0.01908,
+      "executable": true,
+      "reject_reason": null,
+      "n_steps": 12,
+      "step_names": [
+        "transit",
+        "open_jaws",
+        "pre",
+        "grasp",
+        "close_jaws",
+        "lift_breakaway",
+        "lift_top",
+        "place_above",
+        "place_drop",
+        "open_jaws",
+        "place_retreat",
+        "home"
+      ]
+    }
+  }
+}

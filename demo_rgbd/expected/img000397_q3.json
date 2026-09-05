@@ -1,0 +1,78 @@
+{
+  "case": "img000397_q3",
+  "target_id": 1,
+  "tho_pa1": {
+    "label": "center glue bottle",
+    "funnel": {
+      "raw": 520,
+      "in_mask": 269,
+      "collision_free": 38,
+      "top_down": 10,
+      "note": "no grasp fits 32 mm jaws (closest 37 mm)",
+      "aperture_ok": 0
+    },
+    "grasp_found": false
+  },
+  "fgc_default": {
+    "label": "center glue bottle",
+    "funnel": {
+      "raw": 520,
+      "in_mask": 269,
+      "collision_free": 192,
+      "top_down": 91,
+      "note": "select top-down",
+      "aperture_ok": 75,
+      "required_aperture": 0.024647
+    },
+    "grasp_found": true,
+    "score": 0.832392,
+    "translation_cam": [
+      -0.096686,
+      -0.051887,
+      0.5999
+    ],
+    "rotation_cam": [
+      [
+        0.996667,
+        -0.0,
+        -0.081582
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.081582,
+        -0.0,
+        0.996667
+      ]
+    ],
+    "base": {
+      "grasp_point": [
+        0.45331,
+        0.05189,
+        0.1051
+      ],
+      "tilt_deg": 4.68,
+      "object_width_m": 0.02465,
+      "executable": true,
+      "reject_reason": null,
+      "n_steps": 12,
+      "step_names": [
+        "transit",
+        "open_jaws",
+        "pre",
+        "grasp",
+        "close_jaws",
+        "lift_breakaway",
+        "lift_top",
+        "place_above",
+        "place_drop",
+        "open_jaws",
+        "place_retreat",
+        "home"
+      ]
+    }
+  }
+}

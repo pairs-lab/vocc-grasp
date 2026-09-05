@@ -1,0 +1,77 @@
+{
+  "case": "img000384_q8",
+  "target_id": 3,
+  "tho_pa1": {
+    "label": "right toothpaste box",
+    "funnel": {
+      "raw": 541,
+      "in_mask": 129,
+      "collision_free": 1,
+      "top_down": 0,
+      "note": "no suitable grasp found"
+    },
+    "grasp_found": false
+  },
+  "fgc_default": {
+    "label": "right toothpaste box",
+    "funnel": {
+      "raw": 541,
+      "in_mask": 129,
+      "collision_free": 77,
+      "top_down": 40,
+      "note": "select top-down",
+      "aperture_ok": 40,
+      "required_aperture": 0.010903
+    },
+    "grasp_found": true,
+    "score": 0.605685,
+    "translation_cam": [
+      -0.026538,
+      -0.005721,
+      0.6413
+    ],
+    "rotation_cam": [
+      [
+        -0.343039,
+        0.886093,
+        -0.311711
+      ],
+      [
+        -0.939321,
+        -0.3236,
+        0.113836
+      ],
+      [
+        0.0,
+        0.331847,
+        0.943333
+      ]
+    ],
+    "base": {
+      "grasp_point": [
+        0.52346,
+        0.00572,
+        0.0637
+      ],
+      "tilt_deg": 19.38,
+      "object_width_m": 0.0109,
+      "executable": true,
+      "reject_reason": null,
+      "n_steps": 12,
+      "step_names": [
+        "transit",
+        "open_jaws",
+        "pre",
+        "grasp",
+        "close_jaws",
+        "lift_breakaway",
+        "lift_top",
+        "place_above",
+        "place_drop",
+        "open_jaws",
+        "place_retreat",
+        "home"
+      ]
+    }
+  }
+}

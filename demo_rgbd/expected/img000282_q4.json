@@ -1,0 +1,128 @@
+{
+  "case": "img000282_q4",
+  "target_id": 2,
+  "tho_pa1": {
+    "label": "middle left tube",
+    "funnel": {
+      "raw": 220,
+      "in_mask": 99,
+      "collision_free": 17,
+      "top_down": 10,
+      "note": "select top-down",
+      "aperture_ok": 5,
+      "required_aperture": 0.021604
+    },
+    "grasp_found": true,
+    "score": 0.635922,
+    "translation_cam": [
+      -0.048962,
+      -0.012005,
+      0.665533
+    ],
+    "rotation_cam": [
+      [
+        -0.612758,
+        0.779393,
+        -0.130669
+      ],
+      [
+        -0.788313,
+        -0.591197,
+        0.170434
+      ],
+      [
+        0.055584,
+        0.207443,
+        0.976667
+      ]
+    ],
+    "base": {
+      "grasp_point": [
+        0.50104,
+        0.012,
+        0.03947
+      ],
+      "tilt_deg": 12.4,
+      "object_width_m": 0.0216,
+      "executable": true,
+      "reject_reason": null,
+      "n_steps": 12,
+      "step_names": [
+        "transit",
+        "open_jaws",
+        "pre",
+        "grasp",
+        "close_jaws",
+        "lift_breakaway",
+        "lift_top",
+        "place_above",
+        "place_drop",
+        "open_jaws",
+        "place_retreat",
+        "home"
+      ]
+    }
+  },
+  "fgc_default": {
+    "label": "middle left tube",
+    "funnel": {
+      "raw": 220,
+      "in_mask": 99,
+      "collision_free": 72,
+      "top_down": 44,
+      "note": "select top-down",
+      "aperture_ok": 44,
+      "required_aperture": 0.021604
+    },
+    "grasp_found": true,
+    "score": 0.635922,
+    "translation_cam": [
+      -0.048962,
+      -0.012005,
+      0.665533
+    ],
+    "rotation_cam": [
+      [
+        -0.612758,
+        0.779393,
+        -0.130669
+      ],
+      [
+        -0.788313,
+        -0.591197,
+        0.170434
+      ],
+      [
+        0.055584,
+        0.207443,
+        0.976667
+      ]
+    ],
+    "base": {
+      "grasp_point": [
+        0.50104,
+        0.012,
+        0.03947
+      ],
+      "tilt_deg": 12.4,
+      "object_width_m": 0.0216,
+      "executable": true,
+      "reject_reason": null,
+      "n_steps": 12,
+      "step_names": [
+        "transit",
+        "open_jaws",
+        "pre",
+        "grasp",
+        "close_jaws",
+        "lift_breakaway",
+        "lift_top",
+        "place_above",
+        "place_drop",
+        "open_jaws",
+        "place_retreat",
+        "home"
+      ]
+    }
+  }
+}

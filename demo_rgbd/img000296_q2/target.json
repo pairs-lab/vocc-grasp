@@ -1,0 +1,26 @@
+{
+  "case": "img000296_q2",
+  "image_id": 296,
+  "difficulty": "Hard",
+  "request": "vertical bottle with blue cap",
+  "instances": {
+    "1": "horizontal bottle with blue cap",
+    "2": "vertical bottle with blue cap",
+    "3": "small horizontal bottle",
+    "4": "angled bottle with nozzle",
+    "5": "white round cap"
+  },
+  "ground_truth": {
+    "top_ids": [
+      1,
+      3
+    ],
+    "note": "objects that are NOT occluded, i.e. legal to grasp this turn"
+  },
+  "reference_run": {
+    "method": "gemini_uoais_ref",
+    "target_id": 1,
+    "target_label": "object",
+    "target_correct": true
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "case": "img000286_q3",
+  "image_id": 286,
+  "difficulty": "Hard",
+  "request": "bottom drill",
+  "instances": {
+    "1": "wine glass",
+    "2": "left drill",
+    "3": "bottom drill",
+    "4": "top drill"
+  },
+  "ground_truth": {
+    "top_ids": [
+      1,
+      2
+    ],
+    "note": "objects that are NOT occluded, i.e. legal to grasp this turn"
+  },
+  "reference_run": {
+    "method": "gemini_uoais_ref",
+    "target_id": 1,
+    "target_label": "wine glass",
+    "target_correct": true
+  }
+}

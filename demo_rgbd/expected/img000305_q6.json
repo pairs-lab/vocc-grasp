@@ -1,0 +1,77 @@
+{
+  "case": "img000305_q6",
+  "target_id": 5,
+  "tho_pa1": {
+    "label": "middle knife",
+    "funnel": {
+      "raw": 251,
+      "in_mask": 28,
+      "collision_free": 0,
+      "top_down": 0,
+      "note": "no grasps"
+    },
+    "grasp_found": false
+  },
+  "fgc_default": {
+    "label": "middle knife",
+    "funnel": {
+      "raw": 251,
+      "in_mask": 28,
+      "collision_free": 6,
+      "top_down": 5,
+      "note": "select top-down",
+      "aperture_ok": 5,
+      "required_aperture": 0.040017
+    },
+    "grasp_found": true,
+    "score": 0.162276,
+    "translation_cam": [
+      0.10358,
+      -0.058922,
+      0.671767
+    ],
+    "rotation_cam": [
+      [
+        0.70538,
+        0.621407,
+        -0.341017
+      ],
+      [
+        -0.708829,
+        0.618383,
+        -0.339357
+      ],
+      [
+        0.0,
+        0.481098,
+        0.876667
+      ]
+    ],
+    "base": {
+      "grasp_point": [
+        0.65358,
+        0.05892,
+        0.03323
+      ],
+      "tilt_deg": 28.76,
+      "object_width_m": 0.04002,
+      "executable": true,
+      "reject_reason": null,
+      "n_steps": 12,
+      "step_names": [
+        "transit",
+        "open_jaws",
+        "pre",
+        "grasp",
+        "close_jaws",
+        "lift_breakaway",
+        "lift_top",
+        "place_above",
+        "place_drop",
+        "open_jaws",
+        "place_retreat",
+        "home"
+      ]
+    }
+  }
+}

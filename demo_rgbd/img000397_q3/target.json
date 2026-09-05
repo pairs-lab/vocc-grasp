@@ -1,0 +1,25 @@
+{
+  "case": "img000397_q3",
+  "image_id": 397,
+  "difficulty": "Hard",
+  "request": "right glue bottle",
+  "instances": {
+    "1": "center glue bottle",
+    "2": "bottom glue bottle",
+    "3": "right glue bottle",
+    "4": "right sugar box",
+    "5": "bottom sugar box"
+  },
+  "ground_truth": {
+    "top_ids": [
+      1
+    ],
+    "note": "objects that are NOT occluded, i.e. legal to grasp this turn"
+  },
+  "reference_run": {
+    "method": "gemini_uoais_ref",
+    "target_id": 1,
+    "target_label": "bottle",
+    "target_correct": true
+  }
+}

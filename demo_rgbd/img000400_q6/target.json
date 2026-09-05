@@ -1,0 +1,27 @@
+{
+  "case": "img000400_q6",
+  "image_id": 400,
+  "difficulty": "Hard",
+  "request": "right handle",
+  "instances": {
+    "1": "top left cup",
+    "2": "right pot",
+    "3": "unknown",
+    "4": "top knife",
+    "5": "middle knife",
+    "6": "right handle",
+    "7": "left knife"
+  },
+  "ground_truth": {
+    "top_ids": [
+      2
+    ],
+    "note": "objects that are NOT occluded, i.e. legal to grasp this turn"
+  },
+  "reference_run": {
+    "method": "gemini_uoais_ref",
+    "target_id": 2,
+    "target_label": "mug",
+    "target_correct": true
+  }
+}

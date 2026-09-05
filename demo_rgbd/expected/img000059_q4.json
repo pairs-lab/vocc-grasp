@@ -1,0 +1,77 @@
+{
+  "case": "img000059_q4",
+  "target_id": 3,
+  "tho_pa1": {
+    "label": "orange sponge",
+    "funnel": {
+      "raw": 192,
+      "in_mask": 170,
+      "collision_free": 6,
+      "top_down": 0,
+      "note": "no suitable grasp found"
+    },
+    "grasp_found": false
+  },
+  "fgc_default": {
+    "label": "orange sponge",
+    "funnel": {
+      "raw": 192,
+      "in_mask": 170,
+      "collision_free": 125,
+      "top_down": 49,
+      "note": "select top-down",
+      "aperture_ok": 49,
+      "required_aperture": 0.018057
+    },
+    "grasp_found": true,
+    "score": 0.261169,
+    "translation_cam": [
+      -0.120388,
+      0.001228,
+      0.669933
+    ],
+    "rotation_cam": [
+      [
+        0.0,
+        0.996667,
+        -0.081582
+      ],
+      [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.081582,
+        0.996667
+      ]
+    ],
+    "base": {
+      "grasp_point": [
+        0.42961,
+        -0.00123,
+        0.03507
+      ],
+      "tilt_deg": 4.68,
+      "object_width_m": 0.01806,
+      "executable": true,
+      "reject_reason": null,
+      "n_steps": 12,
+      "step_names": [
+        "transit",
+        "open_jaws",
+        "pre",
+        "grasp",
+        "close_jaws",
+        "lift_breakaway",
+        "lift_top",
+        "place_above",
+        "place_drop",
+        "open_jaws",
+        "place_retreat",
+        "home"
+      ]
+    }
+  }
+}

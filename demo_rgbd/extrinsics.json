@@ -1,0 +1,36 @@
+{
+  "_comment": [
+    "T_BASE_CAM for THIS DEMO SET -- not for your cell.",
+    "These are real MetaGraspNetV2 captures (camera looking straight down, table",
+    "about 0.705 m from the lens), but they ship with no robot frame attached.",
+    "The matrix below puts the TABLE at z = 0 and the bin 0.55 m in front of the",
+    "robot base, so the geometry chain runs end to end and you can see a result.",
+    "ON A REAL CELL: replace this with your own hand-eye calibration."
+  ],
+  "T_BASE_CAM": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.55
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      0.705
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

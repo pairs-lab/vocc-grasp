@@ -1,0 +1,77 @@
+{
+  "case": "img000296_q2",
+  "target_id": 1,
+  "tho_pa1": {
+    "label": "horizontal bottle with blue cap",
+    "funnel": {
+      "raw": 634,
+      "in_mask": 186,
+      "collision_free": 10,
+      "top_down": 0,
+      "note": "no top-down grasp within 30 deg (closest 37)"
+    },
+    "grasp_found": false
+  },
+  "fgc_default": {
+    "label": "horizontal bottle with blue cap",
+    "funnel": {
+      "raw": 634,
+      "in_mask": 186,
+      "collision_free": 56,
+      "top_down": 12,
+      "note": "select top-down",
+      "aperture_ok": 12,
+      "required_aperture": 0.088878
+    },
+    "grasp_found": true,
+    "score": 0.370513,
+    "translation_cam": [
+      0.091128,
+      -0.091715,
+      0.625667
+    ],
+    "rotation_cam": [
+      [
+        -0.268338,
+        -0.841812,
+        0.468345
+      ],
+      [
+        0.955655,
+        -0.293852,
+        0.019368
+      ],
+      [
+        0.12132,
+        0.452773,
+        0.883333
+      ]
+    ],
+    "base": {
+      "grasp_point": [
+        0.64113,
+        0.09172,
+        0.07933
+      ],
+      "tilt_deg": 27.95,
+      "object_width_m": 0.08888,
+      "executable": true,
+      "reject_reason": null,
+      "n_steps": 12,
+      "step_names": [
+        "transit",
+        "open_jaws",
+        "pre",
+        "grasp",
+        "close_jaws",
+        "lift_breakaway",
+        "lift_top",
+        "place_above",
+        "place_drop",
+        "open_jaws",
+        "place_retreat",
+        "home"
+      ]
+    }
+  }
+}

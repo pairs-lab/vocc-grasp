@@ -1,0 +1,78 @@
+{
+  "case": "img000377_q4",
+  "target_id": 2,
+  "tho_pa1": {
+    "label": "right red bowl",
+    "funnel": {
+      "raw": 582,
+      "in_mask": 306,
+      "collision_free": 7,
+      "top_down": 3,
+      "note": "no grasp fits 32 mm jaws (closest 35 mm)",
+      "aperture_ok": 0
+    },
+    "grasp_found": false
+  },
+  "fgc_default": {
+    "label": "right red bowl",
+    "funnel": {
+      "raw": 582,
+      "in_mask": 306,
+      "collision_free": 27,
+      "top_down": 10,
+      "note": "select top-down",
+      "aperture_ok": 10,
+      "required_aperture": 0.04017
+    },
+    "grasp_found": true,
+    "score": 0.094504,
+    "translation_cam": [
+      -0.022617,
+      -0.102596,
+      0.6405
+    ],
+    "rotation_cam": [
+      [
+        0.887448,
+        -0.437862,
+        0.143918
+      ],
+      [
+        0.460907,
+        0.843076,
+        -0.277106
+      ],
+      [
+        0.0,
+        0.31225,
+        0.95
+      ]
+    ],
+    "base": {
+      "grasp_point": [
+        0.52738,
+        0.1026,
+        0.0645
+      ],
+      "tilt_deg": 18.19,
+      "object_width_m": 0.04017,
+      "executable": true,
+      "reject_reason": null,
+      "n_steps": 12,
+      "step_names": [
+        "transit",
+        "open_jaws",
+        "pre",
+        "grasp",
+        "close_jaws",
+        "lift_breakaway",
+        "lift_top",
+        "place_above",
+        "place_drop",
+        "open_jaws",
+        "place_retreat",
+        "home"
+      ]
+    }
+  }
+}

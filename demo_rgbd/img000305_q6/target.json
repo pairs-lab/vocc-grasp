@@ -1,0 +1,27 @@
+{
+  "case": "img000305_q6",
+  "image_id": 305,
+  "difficulty": "Hard",
+  "request": "right knife",
+  "instances": {
+    "1": "top box",
+    "2": "bottom box",
+    "3": "green apple",
+    "4": "left knife",
+    "5": "middle knife",
+    "6": "right knife"
+  },
+  "ground_truth": {
+    "top_ids": [
+      2,
+      5
+    ],
+    "note": "objects that are NOT occluded, i.e. legal to grasp this turn"
+  },
+  "reference_run": {
+    "method": "gemini_uoais_ref",
+    "target_id": 5,
+    "target_label": "knife",
+    "target_correct": true
+  }
+}

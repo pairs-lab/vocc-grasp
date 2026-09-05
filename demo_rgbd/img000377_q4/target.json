@@ -1,0 +1,26 @@
+{
+  "case": "img000377_q4",
+  "image_id": 377,
+  "difficulty": "Hard",
+  "request": "middle blue box",
+  "instances": {
+    "1": "left red bowl",
+    "2": "right red bowl",
+    "3": "top blue box",
+    "4": "middle blue box",
+    "5": "bottom blue box",
+    "6": "red-handled tool"
+  },
+  "ground_truth": {
+    "top_ids": [
+      2
+    ],
+    "note": "objects that are NOT occluded, i.e. legal to grasp this turn"
+  },
+  "reference_run": {
+    "method": "gemini_uoais_ref",
+    "target_id": 2,
+    "target_label": "red bowl",
+    "target_correct": true
+  }
+}

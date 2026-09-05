@@ -1,0 +1,77 @@
+{
+  "case": "img000355_q9",
+  "target_id": 2,
+  "tho_pa1": {
+    "label": "large red fruit",
+    "funnel": {
+      "raw": 237,
+      "in_mask": 156,
+      "collision_free": 1,
+      "top_down": 0,
+      "note": "no top-down grasp within 30 deg (closest 58)"
+    },
+    "grasp_found": false
+  },
+  "fgc_default": {
+    "label": "large red fruit",
+    "funnel": {
+      "raw": 237,
+      "in_mask": 156,
+      "collision_free": 111,
+      "top_down": 30,
+      "note": "select top-down",
+      "aperture_ok": 29,
+      "required_aperture": 0.00485
+    },
+    "grasp_found": true,
+    "score": 0.658487,
+    "translation_cam": [
+      0.019714,
+      0.045655,
+      0.6405
+    ],
+    "rotation_cam": [
+      [
+        0.996171,
+        0.085969,
+        -0.015895
+      ],
+      [
+        -0.087426,
+        0.979568,
+        -0.181116
+      ],
+      [
+        0.0,
+        0.181812,
+        0.983333
+      ]
+    ],
+    "base": {
+      "grasp_point": [
+        0.56971,
+        -0.04565,
+        0.0645
+      ],
+      "tilt_deg": 10.48,
+      "object_width_m": 0.00485,
+      "executable": true,
+      "reject_reason": null,
+      "n_steps": 12,
+      "step_names": [
+        "transit",
+        "open_jaws",
+        "pre",
+        "grasp",
+        "close_jaws",
+        "lift_breakaway",
+        "lift_top",
+        "place_above",
+        "place_drop",
+        "open_jaws",
+        "place_retreat",
+        "home"
+      ]
+    }
+  }
+}
