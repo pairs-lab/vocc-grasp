@@ -1,0 +1,10947 @@
+[
+  {
+    "image_id": 9445,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 7,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 6562,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1,
+      3,
+      4
+    ],
+    "object_semantic_id": 49,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 6157,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        4,
+        7,
+        1
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      6,
+      7
+    ],
+    "object_semantic_id": 27,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 2060,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 58,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 16608,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 39,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 9476,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        3,
+        2
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 61,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 2776,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        3,
+        2
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 25,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 7760,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 27,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 11451,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 4,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 3115,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        1,
+        6,
+        3
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      6
+    ],
+    "object_semantic_id": 14,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 12799,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        5
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [],
+    "object_semantic_id": 66,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 15846,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        4
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [],
+    "object_semantic_id": 69,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 16915,
+    "query_object": 8,
+    "occlusion_paths": [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        3,
+        8
+      ],
+      [
+        2,
+        5,
+        8
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2,
+      3,
+      5
+    ],
+    "object_semantic_id": 27,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 3,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 15697,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 3,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 9784,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        6,
+        5,
+        2
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      5
+    ],
+    "object_semantic_id": 28,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 15968,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        5
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [],
+    "object_semantic_id": 24,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 10909,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 23,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 16185,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        1,
+        3
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 65,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 2554,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        2,
+        1,
+        4
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 36,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 2977,
+    "query_object": 8,
+    "occlusion_paths": [
+      [
+        1,
+        8
+      ],
+      [
+        2,
+        5,
+        8
+      ]
+    ],
+    "top_objects": [
+      1,
+      2
+    ],
+    "depends_on": [
+      1,
+      5
+    ],
+    "object_semantic_id": 44,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 4612,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        2,
+        3
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 29,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 13073,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 44,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 3028,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        6,
+        4,
+        5
+      ],
+      [
+        6,
+        5
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      3,
+      4,
+      6
+    ],
+    "object_semantic_id": 24,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 15591,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        6,
+        1
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      6
+    ],
+    "object_semantic_id": 15,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 12299,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        10,
+        5,
+        4
+      ],
+      [
+        10,
+        1,
+        12,
+        4
+      ],
+      [
+        10,
+        5,
+        12,
+        4
+      ],
+      [
+        10,
+        12,
+        4
+      ]
+    ],
+    "top_objects": [
+      10
+    ],
+    "depends_on": [
+      12,
+      5
+    ],
+    "object_semantic_id": 81,
+    "ambiguity": false,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 4,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 14473,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 9,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 14610,
+    "query_object": 11,
+    "occlusion_paths": [
+      [
+        12,
+        3,
+        1,
+        4,
+        11
+      ]
+    ],
+    "top_objects": [
+      12
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 51,
+    "ambiguity": false,
+    "layer": 5,
+    "difficulty": "Hard",
+    "k_min": 4,
+    "num_paths": 1,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 16913,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        4
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [],
+    "object_semantic_id": 70,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 13389,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        2,
+        1,
+        3
+      ],
+      [
+        4,
+        1,
+        3
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "top_objects": [
+      2,
+      4
+    ],
+    "depends_on": [
+      1,
+      4
+    ],
+    "object_semantic_id": 41,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 3,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 16,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 58,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 17270,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        4
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [],
+    "object_semantic_id": 69,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 9427,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 40,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 2497,
+    "query_object": 6,
+    "occlusion_paths": [
+      [
+        6
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [],
+    "object_semantic_id": 61,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 3269,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        3,
+        1
+      ]
+    ],
+    "top_objects": [
+      3,
+      4
+    ],
+    "depends_on": [
+      3,
+      5
+    ],
+    "object_semantic_id": 18,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 6241,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 70,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 7485,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 17,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 14736,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        7,
+        5,
+        2
+      ]
+    ],
+    "top_objects": [
+      7
+    ],
+    "depends_on": [
+      5
+    ],
+    "object_semantic_id": 18,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 17389,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        2,
+        4
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 28,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 1159,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 27,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 3601,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 59,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 9162,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        3,
+        4
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 7,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 11585,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        1,
+        3,
+        4
+      ],
+      [
+        1,
+        2,
+        3,
+        4
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 40,
+    "ambiguity": false,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 965,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        1,
+        5
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 21,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 10854,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 10,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 5219,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        3,
+        1
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 41,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 3281,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        5,
+        2,
+        4
+      ],
+      [
+        5,
+        3,
+        4
+      ],
+      [
+        5,
+        4
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      2,
+      3,
+      5
+    ],
+    "object_semantic_id": 66,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 3,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 16996,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        8,
+        4
+      ]
+    ],
+    "top_objects": [
+      8
+    ],
+    "depends_on": [
+      8
+    ],
+    "object_semantic_id": 53,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 16878,
+    "query_object": 7,
+    "occlusion_paths": [
+      [
+        9,
+        6,
+        7
+      ]
+    ],
+    "top_objects": [
+      9
+    ],
+    "depends_on": [
+      6
+    ],
+    "object_semantic_id": 14,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 2560,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 1,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 13927,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 22,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 14812,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        9,
+        3
+      ]
+    ],
+    "top_objects": [
+      9
+    ],
+    "depends_on": [
+      9
+    ],
+    "object_semantic_id": 65,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 14738,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        4
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [],
+    "object_semantic_id": 79,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 14309,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        2,
+        1
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 24,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 9777,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 97,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 11585,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1,
+      2
+    ],
+    "object_semantic_id": 25,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 16060,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        1,
+        4
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 36,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 10095,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        4,
+        2,
+        1,
+        3
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 28,
+    "ambiguity": true,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 3,
+    "num_paths": 1,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 16345,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        6,
+        8,
+        5
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      8
+    ],
+    "object_semantic_id": 2,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 510,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 48,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 10015,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        4
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [],
+    "object_semantic_id": 66,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 10392,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        3,
+        2,
+        5
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      2,
+      6
+    ],
+    "object_semantic_id": 31,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 15945,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        6,
+        3,
+        1,
+        2
+      ],
+      [
+        6,
+        3,
+        2
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      1,
+      3
+    ],
+    "object_semantic_id": 74,
+    "ambiguity": false,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 586,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        4,
+        2,
+        3
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 25,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 16651,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 1,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 16480,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        9,
+        8,
+        1
+      ]
+    ],
+    "top_objects": [
+      9
+    ],
+    "depends_on": [
+      8
+    ],
+    "object_semantic_id": 13,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 15042,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        5
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [],
+    "object_semantic_id": 7,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 1008,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 2,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 6809,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        1,
+        4
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 44,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 4872,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 69,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 15537,
+    "query_object": 8,
+    "occlusion_paths": [
+      [
+        8
+      ]
+    ],
+    "top_objects": [
+      8
+    ],
+    "depends_on": [],
+    "object_semantic_id": 26,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 16673,
+    "query_object": 11,
+    "occlusion_paths": [
+      [
+        11
+      ]
+    ],
+    "top_objects": [
+      11
+    ],
+    "depends_on": [],
+    "object_semantic_id": 9,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 17505,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        3,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 65,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 15037,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        2,
+        1
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 58,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 8253,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        2,
+        1,
+        4
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 41,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 13675,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        5,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1,
+      5
+    ],
+    "object_semantic_id": 79,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 8097,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        4
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [],
+    "object_semantic_id": 11,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 3028,
+    "query_object": 8,
+    "occlusion_paths": [
+      [
+        6,
+        4,
+        3,
+        8
+      ],
+      [
+        6,
+        4,
+        5,
+        8
+      ],
+      [
+        6,
+        5,
+        8
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      3,
+      5
+    ],
+    "object_semantic_id": 26,
+    "ambiguity": true,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 3,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 3753,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        1,
+        5
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 30,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 11168,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        2,
+        1
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 43,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 17072,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        3,
+        1
+      ]
+    ],
+    "top_objects": [
+      3,
+      4
+    ],
+    "depends_on": [
+      3,
+      4
+    ],
+    "object_semantic_id": 25,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 15008,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 3,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 6706,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        4
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [],
+    "object_semantic_id": 5,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 14640,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        6,
+        4
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      6
+    ],
+    "object_semantic_id": 57,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 1749,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        5,
+        1
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      5
+    ],
+    "object_semantic_id": 97,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 7972,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        1,
+        4
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 49,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 13425,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        5,
+        1,
+        3
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 26,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 12771,
+    "query_object": 8,
+    "occlusion_paths": [
+      [
+        9,
+        8
+      ]
+    ],
+    "top_objects": [
+      9
+    ],
+    "depends_on": [
+      9
+    ],
+    "object_semantic_id": 15,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 2424,
+    "query_object": 8,
+    "occlusion_paths": [
+      [
+        3,
+        8
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 17,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 10674,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        4,
+        1,
+        3
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      1,
+      2
+    ],
+    "object_semantic_id": 9,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 15302,
+    "query_object": 9,
+    "occlusion_paths": [
+      [
+        6,
+        9
+      ],
+      [
+        7,
+        9
+      ]
+    ],
+    "top_objects": [
+      1,
+      6,
+      7
+    ],
+    "depends_on": [
+      1,
+      6,
+      7
+    ],
+    "object_semantic_id": 78,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 5007,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        3,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 20,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 16184,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        4,
+        2
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 71,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 650,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 21,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 10929,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 13,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 14168,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        2,
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      1,
+      2
+    ],
+    "object_semantic_id": 82,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 6005,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 2,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 10149,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 4,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 11563,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 18,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 7620,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        2,
+        1
+      ],
+      [
+        6,
+        4,
+        1
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "top_objects": [
+      2,
+      6
+    ],
+    "depends_on": [
+      2,
+      4,
+      6
+    ],
+    "object_semantic_id": 49,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 3,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 9785,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 23,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 2280,
+    "query_object": 7,
+    "occlusion_paths": [
+      [
+        1,
+        7
+      ]
+    ],
+    "top_objects": [
+      1,
+      3
+    ],
+    "depends_on": [
+      1,
+      3
+    ],
+    "object_semantic_id": 51,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 15100,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 11,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 17500,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        5,
+        3
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      5
+    ],
+    "object_semantic_id": 63,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 15655,
+    "query_object": 12,
+    "occlusion_paths": [
+      [
+        8,
+        3,
+        12
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        8,
+        14,
+        12
+      ]
+    ],
+    "top_objects": [
+      8
+    ],
+    "depends_on": [
+      8,
+      3,
+      14
+    ],
+    "object_semantic_id": 23,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 3,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 4378,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        1,
+        3
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 59,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 17325,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        1,
+        3
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 8,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 8877,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        5,
+        1,
+        2
+      ],
+      [
+        5,
+        6,
+        2
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      1,
+      6
+    ],
+    "object_semantic_id": 11,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 2827,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 8,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 15617,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        2
+      ],
+      [
+        10,
+        2
+      ]
+    ],
+    "top_objects": [
+      1,
+      10
+    ],
+    "depends_on": [
+      1,
+      10
+    ],
+    "object_semantic_id": 3,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 3114,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        1,
+        5
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 70,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 3280,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        5,
+        2
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      5
+    ],
+    "object_semantic_id": 2,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 4343,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        4,
+        3,
+        1
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 44,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 788,
+    "query_object": 6,
+    "occlusion_paths": [
+      [
+        7,
+        3,
+        6
+      ],
+      [
+        7,
+        6
+      ]
+    ],
+    "top_objects": [
+      7
+    ],
+    "depends_on": [
+      3,
+      7
+    ],
+    "object_semantic_id": 57,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 12346,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        2,
+        1
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 37,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 3366,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        3,
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      2,
+      3
+    ],
+    "object_semantic_id": 42,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 11965,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 41,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 17026,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        1
+      ]
+    ],
+    "top_objects": [
+      4,
+      6
+    ],
+    "depends_on": [
+      4,
+      5
+    ],
+    "object_semantic_id": 39,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 8629,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 7,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 10064,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 48,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 14763,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        5,
+        1
+      ]
+    ],
+    "top_objects": [
+      2,
+      5
+    ],
+    "depends_on": [
+      3,
+      5
+    ],
+    "object_semantic_id": 97,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 9829,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        5,
+        4,
+        1
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 53,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 16725,
+    "query_object": 9,
+    "occlusion_paths": [
+      [
+        1,
+        9
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        5,
+        7,
+        9
+      ]
+    ],
+    "top_objects": [
+      1,
+      5
+    ],
+    "depends_on": [
+      1,
+      5,
+      7
+    ],
+    "object_semantic_id": 79,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 3,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 590,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4,
+        5
+      ]
+    ],
+    "top_objects": [
+      2,
+      3
+    ],
+    "depends_on": [
+      2,
+      4
+    ],
+    "object_semantic_id": 3,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 13072,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5,
+        4
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2,
+      5
+    ],
+    "object_semantic_id": 44,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 15706,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        5,
+        3,
+        1
+      ],
+      [
+        5,
+        1
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      3,
+      5
+    ],
+    "object_semantic_id": 6,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 1757,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 97,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 3011,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        5,
+        1
+      ]
+    ],
+    "top_objects": [
+      3,
+      4
+    ],
+    "depends_on": [
+      3,
+      5
+    ],
+    "object_semantic_id": 13,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 14990,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4,
+        3
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1,
+      4
+    ],
+    "object_semantic_id": 5,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 14875,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 46,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 9652,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 5,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 6161,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        1,
+        3
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 70,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 15945,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        6,
+        3
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      6
+    ],
+    "object_semantic_id": 58,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 16012,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        5,
+        3,
+        4
+      ],
+      [
+        5,
+        4
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      3,
+      5
+    ],
+    "object_semantic_id": 36,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 2579,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        6,
+        5
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      6
+    ],
+    "object_semantic_id": 12,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 14571,
+    "query_object": 8,
+    "occlusion_paths": [
+      [
+        9,
+        2,
+        8
+      ],
+      [
+        9,
+        2,
+        10,
+        8
+      ],
+      [
+        9,
+        2,
+        4,
+        10,
+        8
+      ],
+      [
+        11,
+        8
+      ]
+    ],
+    "top_objects": [
+      9,
+      11
+    ],
+    "depends_on": [
+      11,
+      2,
+      10
+    ],
+    "object_semantic_id": 77,
+    "ambiguity": false,
+    "layer": 5,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 4,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 745,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        2,
+        1
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 66,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 12015,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        4
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [],
+    "object_semantic_id": 67,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 651,
+    "query_object": 8,
+    "occlusion_paths": [
+      [
+        7,
+        4,
+        8
+      ]
+    ],
+    "top_objects": [
+      1,
+      7
+    ],
+    "depends_on": [
+      4,
+      6
+    ],
+    "object_semantic_id": 53,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 5418,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        5
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [],
+    "object_semantic_id": 45,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 3519,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        5,
+        3,
+        1
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 53,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 14736,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        4
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [],
+    "object_semantic_id": 79,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 15042,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        4
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [],
+    "object_semantic_id": 7,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 6685,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 61,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 3049,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        4
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [],
+    "object_semantic_id": 24,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 11506,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 23,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 14501,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 64,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 8876,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        5,
+        1
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      5
+    ],
+    "object_semantic_id": 47,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 2932,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        4,
+        1
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 70,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 666,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        7,
+        5
+      ]
+    ],
+    "top_objects": [
+      7
+    ],
+    "depends_on": [
+      7
+    ],
+    "object_semantic_id": 39,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 1697,
+    "query_object": 7,
+    "occlusion_paths": [
+      [
+        3,
+        7
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 16,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 5546,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        4
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [],
+    "object_semantic_id": 50,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 533,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        6,
+        3
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      6
+    ],
+    "object_semantic_id": 37,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 16023,
+    "query_object": 6,
+    "occlusion_paths": [
+      [
+        5,
+        8,
+        6
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      8
+    ],
+    "object_semantic_id": 23,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 16187,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        5
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [],
+    "object_semantic_id": 63,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 15870,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        1,
+        4
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 58,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 13016,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 73,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 9423,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        2,
+        4,
+        5,
+        1
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      5
+    ],
+    "object_semantic_id": 15,
+    "ambiguity": false,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 3,
+    "num_paths": 1,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 693,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        8,
+        2,
+        5
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "top_objects": [
+      8,
+      4
+    ],
+    "depends_on": [
+      2,
+      4
+    ],
+    "object_semantic_id": 28,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 5903,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        2,
+        4
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 59,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 1175,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        6,
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 47,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 16127,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        4,
+        5
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 66,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 16230,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 14,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 16303,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        2,
+        3
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 12,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 16062,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 71,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 16675,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        6,
+        1,
+        3
+      ],
+      [
+        6,
+        13,
+        1,
+        3
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      1,
+      11
+    ],
+    "object_semantic_id": 22,
+    "ambiguity": false,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 5595,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        4,
+        5
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1,
+      4
+    ],
+    "object_semantic_id": 18,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 9380,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        2,
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      1,
+      2
+    ],
+    "object_semantic_id": 25,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 12299,
+    "query_object": 12,
+    "occlusion_paths": [
+      [
+        10,
+        1,
+        12
+      ],
+      [
+        10,
+        5,
+        12
+      ],
+      [
+        10,
+        12
+      ]
+    ],
+    "top_objects": [
+      10
+    ],
+    "depends_on": [
+      1,
+      10,
+      5
+    ],
+    "object_semantic_id": 72,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 3,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 14989,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4,
+        3
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1,
+      4
+    ],
+    "object_semantic_id": 5,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 7682,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        5,
+        1
+      ],
+      [
+        7,
+        6,
+        1
+      ]
+    ],
+    "top_objects": [
+      5,
+      7
+    ],
+    "depends_on": [
+      5,
+      6
+    ],
+    "object_semantic_id": 43,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 5902,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        2,
+        1
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2,
+      3
+    ],
+    "object_semantic_id": 31,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 1395,
+    "query_object": 6,
+    "occlusion_paths": [
+      [
+        6
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [],
+    "object_semantic_id": 18,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 5648,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        3,
+        2
+      ],
+      [
+        1,
+        4,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      3,
+      4
+    ],
+    "object_semantic_id": 61,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 5524,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        3,
+        1
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 43,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 6659,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 61,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 10896,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 25,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 6570,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        3,
+        1
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 25,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 2877,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        3,
+        1
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 66,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 10220,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 19,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 13437,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 80,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 9594,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 46,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 11565,
+    "query_object": 6,
+    "occlusion_paths": [
+      [
+        6
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [],
+    "object_semantic_id": 64,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 4561,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        3,
+        2
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 20,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 10515,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        3,
+        2
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 4,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 12799,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        5,
+        1
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      2,
+      5
+    ],
+    "object_semantic_id": 97,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 2280,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        1,
+        7,
+        5,
+        4
+      ]
+    ],
+    "top_objects": [
+      1,
+      3
+    ],
+    "depends_on": [
+      5
+    ],
+    "object_semantic_id": 18,
+    "ambiguity": true,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 3,
+    "num_paths": 1,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 13860,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        5,
+        4,
+        3
+      ],
+      [
+        2,
+        5,
+        3
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2,
+      4,
+      5
+    ],
+    "object_semantic_id": 9,
+    "ambiguity": true,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 3,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 15534,
+    "query_object": 11,
+    "occlusion_paths": [
+      [
+        8,
+        11
+      ]
+    ],
+    "top_objects": [
+      8
+    ],
+    "depends_on": [
+      8
+    ],
+    "object_semantic_id": 58,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 6985,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 69,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 16762,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        12,
+        7,
+        1
+      ],
+      [
+        12,
+        1
+      ]
+    ],
+    "top_objects": [
+      12
+    ],
+    "depends_on": [
+      9,
+      12,
+      7
+    ],
+    "object_semantic_id": 58,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 17019,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        6,
+        1,
+        2,
+        4
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 27,
+    "ambiguity": true,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 3,
+    "num_paths": 1,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 1813,
+    "query_object": 7,
+    "occlusion_paths": [
+      [
+        4,
+        7
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 19,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 3283,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        5,
+        2,
+        4,
+        1
+      ],
+      [
+        5,
+        4,
+        1
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 18,
+    "ambiguity": false,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 1814,
+    "query_object": 8,
+    "occlusion_paths": [
+      [
+        1,
+        3,
+        8
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 19,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 2716,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 37,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 14558,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 60,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 3708,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 2,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 423,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 25,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 1269,
+    "query_object": 8,
+    "occlusion_paths": [
+      [
+        4,
+        8
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 67,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 14804,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        5
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [],
+    "object_semantic_id": 50,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 2427,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 58,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 15499,
+    "query_object": 11,
+    "occlusion_paths": [
+      [
+        9,
+        11
+      ]
+    ],
+    "top_objects": [
+      9
+    ],
+    "depends_on": [
+      9
+    ],
+    "object_semantic_id": 53,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 17123,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 22,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 15537,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        9,
+        2,
+        1
+      ]
+    ],
+    "top_objects": [
+      9
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 43,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 15929,
+    "query_object": 7,
+    "occlusion_paths": [
+      [
+        8,
+        7
+      ]
+    ],
+    "top_objects": [
+      8,
+      6
+    ],
+    "depends_on": [
+      8,
+      6
+    ],
+    "object_semantic_id": 72,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 630,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        2,
+        5
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 53,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 7977,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        4
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [],
+    "object_semantic_id": 49,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 8233,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 14,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 16851,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 11,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 14865,
+    "query_object": 9,
+    "occlusion_paths": [
+      [
+        6,
+        9
+      ],
+      [
+        6,
+        12,
+        9
+      ],
+      [
+        8,
+        12,
+        9
+      ]
+    ],
+    "top_objects": [
+      8,
+      6
+    ],
+    "depends_on": [
+      12,
+      6
+    ],
+    "object_semantic_id": 14,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 3,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 10094,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        4,
+        2,
+        1,
+        3
+      ],
+      [
+        4,
+        2,
+        3
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      1,
+      2
+    ],
+    "object_semantic_id": 28,
+    "ambiguity": true,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 586,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        4,
+        2,
+        3,
+        5
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 61,
+    "ambiguity": false,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 3,
+    "num_paths": 1,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 15589,
+    "query_object": 6,
+    "occlusion_paths": [
+      [
+        6
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [],
+    "object_semantic_id": 7,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 15679,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 70,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 10211,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 57,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 3233,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        2,
+        7,
+        4
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      7
+    ],
+    "object_semantic_id": 15,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 16711,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        7,
+        6,
+        3,
+        5
+      ],
+      [
+        7,
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        7,
+        5
+      ]
+    ],
+    "top_objects": [
+      4,
+      7
+    ],
+    "depends_on": [
+      3,
+      4,
+      7
+    ],
+    "object_semantic_id": 82,
+    "ambiguity": true,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 4,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 657,
+    "query_object": 7,
+    "occlusion_paths": [
+      [
+        4,
+        2,
+        7
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 23,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 15763,
+    "query_object": 7,
+    "occlusion_paths": [
+      [
+        4,
+        1,
+        7
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        8,
+        7
+      ],
+      [
+        4,
+        1,
+        11,
+        7
+      ],
+      [
+        4,
+        11,
+        7
+      ],
+      [
+        8,
+        11,
+        7
+      ],
+      [
+        4,
+        12,
+        11,
+        7
+      ]
+    ],
+    "top_objects": [
+      8,
+      4
+    ],
+    "depends_on": [
+      8,
+      1,
+      11,
+      4
+    ],
+    "object_semantic_id": 23,
+    "ambiguity": true,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 7,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 12901,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        8,
+        7,
+        2
+      ],
+      [
+        8,
+        2
+      ]
+    ],
+    "top_objects": [
+      8,
+      6
+    ],
+    "depends_on": [
+      8,
+      7
+    ],
+    "object_semantic_id": 27,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 1117,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 18,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 5044,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        1,
+        5
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 64,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 4710,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 14,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 12203,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        2,
+        3
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 62,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 378,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 25,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 12044,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        2,
+        5
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 52,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 16482,
+    "query_object": 6,
+    "occlusion_paths": [
+      [
+        7,
+        5,
+        6
+      ]
+    ],
+    "top_objects": [
+      7
+    ],
+    "depends_on": [
+      5,
+      7
+    ],
+    "object_semantic_id": 61,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 3280,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        5
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [],
+    "object_semantic_id": 66,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 17019,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        6,
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      1,
+      6
+    ],
+    "object_semantic_id": 39,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 4095,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 10,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 4120,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        3,
+        4,
+        2
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 3,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 5193,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        5,
+        2,
+        3
+      ],
+      [
+        5,
+        3
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      2,
+      5
+    ],
+    "object_semantic_id": 34,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 7872,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 64,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 17383,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        4,
+        1
+      ],
+      [
+        2,
+        5,
+        1
+      ],
+      [
+        4,
+        5,
+        1
+      ]
+    ],
+    "top_objects": [
+      2,
+      4
+    ],
+    "depends_on": [
+      4,
+      5
+    ],
+    "object_semantic_id": 34,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 3,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 3058,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        3,
+        1,
+        4
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      1,
+      2
+    ],
+    "object_semantic_id": 26,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 16890,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        1,
+        5
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 60,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 16884,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 71,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 13254,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 31,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 2048,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        1,
+        3
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 69,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 3674,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 24,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 4089,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 52,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 11673,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 9,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 3336,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        2,
+        1,
+        3
+      ],
+      [
+        4,
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        5,
+        3
+      ]
+    ],
+    "top_objects": [
+      2,
+      4,
+      5
+    ],
+    "depends_on": [
+      1,
+      2,
+      5
+    ],
+    "object_semantic_id": 48,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 4,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 3173,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        1,
+        3
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 61,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 12129,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 34,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 2913,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        5,
+        4,
+        2
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 70,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 12297,
+    "query_object": 6,
+    "occlusion_paths": [
+      [
+        10,
+        5,
+        12,
+        4,
+        6
+      ],
+      [
+        10,
+        12,
+        4,
+        6
+      ],
+      [
+        10,
+        5,
+        12,
+        6
+      ],
+      [
+        10,
+        12,
+        6
+      ]
+    ],
+    "top_objects": [
+      10
+    ],
+    "depends_on": [
+      12,
+      4,
+      5
+    ],
+    "object_semantic_id": 42,
+    "ambiguity": false,
+    "layer": 5,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 4,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 17460,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        5,
+        6,
+        2
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      6
+    ],
+    "object_semantic_id": 65,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 731,
+    "query_object": 8,
+    "occlusion_paths": [
+      [
+        2,
+        8
+      ]
+    ],
+    "top_objects": [
+      2,
+      7
+    ],
+    "depends_on": [
+      2,
+      3
+    ],
+    "object_semantic_id": 29,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 971,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        3,
+        2,
+        1
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 2,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 14867,
+    "query_object": 7,
+    "occlusion_paths": [
+      [
+        2,
+        7
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 25,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 11944,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        9,
+        1,
+        5
+      ],
+      [
+        9,
+        1,
+        10,
+        5
+      ]
+    ],
+    "top_objects": [
+      9
+    ],
+    "depends_on": [
+      1,
+      10,
+      9
+    ],
+    "object_semantic_id": 82,
+    "ambiguity": true,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 8689,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 69,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 15704,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        5,
+        1,
+        3
+      ],
+      [
+        5,
+        3
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      1,
+      5
+    ],
+    "object_semantic_id": 23,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 15171,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        8,
+        1,
+        2
+      ],
+      [
+        8,
+        2
+      ]
+    ],
+    "top_objects": [
+      8
+    ],
+    "depends_on": [
+      8,
+      1
+    ],
+    "object_semantic_id": 34,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 16060,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        6,
+        3
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      6
+    ],
+    "object_semantic_id": 79,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 1442,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 67,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 2976,
+    "query_object": 6,
+    "occlusion_paths": [
+      [
+        1,
+        6
+      ],
+      [
+        7,
+        6
+      ],
+      [
+        1,
+        8,
+        6
+      ],
+      [
+        5,
+        8,
+        6
+      ]
+    ],
+    "top_objects": [
+      1,
+      5,
+      7
+    ],
+    "depends_on": [
+      8,
+      1,
+      7
+    ],
+    "object_semantic_id": 28,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 4,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 8087,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 10,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 9138,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        4,
+        1
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 24,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 6502,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 39,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 17008,
+    "query_object": 8,
+    "occlusion_paths": [
+      [
+        5,
+        11,
+        8
+      ],
+      [
+        9,
+        11,
+        8
+      ]
+    ],
+    "top_objects": [
+      9,
+      2,
+      5
+    ],
+    "depends_on": [
+      11
+    ],
+    "object_semantic_id": 8,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 3351,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        5
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [],
+    "object_semantic_id": 22,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 7714,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        4,
+        2
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 34,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 11038,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        4,
+        3
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 97,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 16675,
+    "query_object": 10,
+    "occlusion_paths": [
+      [
+        2,
+        10
+      ],
+      [
+        5,
+        8,
+        10
+      ]
+    ],
+    "top_objects": [
+      2,
+      5
+    ],
+    "depends_on": [
+      8,
+      2
+    ],
+    "object_semantic_id": 60,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 322,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        2,
+        3
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 66,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 11305,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3,
+        2
+      ],
+      [
+        6,
+        2
+      ]
+    ],
+    "top_objects": [
+      1,
+      5,
+      6
+    ],
+    "depends_on": [
+      1,
+      3,
+      5,
+      6
+    ],
+    "object_semantic_id": 49,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 3,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 15910,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 70,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 9450,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 62,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 14610,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        12,
+        3,
+        1
+      ]
+    ],
+    "top_objects": [
+      12
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 31,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 17004,
+    "query_object": 9,
+    "occlusion_paths": [
+      [
+        2,
+        7,
+        9
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      7
+    ],
+    "object_semantic_id": 53,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 1155,
+    "query_object": 7,
+    "occlusion_paths": [
+      [
+        5,
+        8,
+        7
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      8
+    ],
+    "object_semantic_id": 22,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 2004,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        6,
+        10,
+        3
+      ],
+      [
+        1,
+        11,
+        3
+      ],
+      [
+        6,
+        11,
+        3
+      ],
+      [
+        6,
+        10,
+        11,
+        3
+      ]
+    ],
+    "top_objects": [
+      1,
+      5,
+      6
+    ],
+    "depends_on": [
+      10,
+      11
+    ],
+    "object_semantic_id": 39,
+    "ambiguity": true,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 4,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 2004,
+    "query_object": 11,
+    "occlusion_paths": [
+      [
+        1,
+        11
+      ],
+      [
+        6,
+        11
+      ],
+      [
+        6,
+        10,
+        11
+      ]
+    ],
+    "top_objects": [
+      1,
+      5,
+      6
+    ],
+    "depends_on": [
+      1,
+      10,
+      6,
+      7
+    ],
+    "object_semantic_id": 49,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 3,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 15950,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "top_objects": [
+      2,
+      3
+    ],
+    "depends_on": [
+      2,
+      3
+    ],
+    "object_semantic_id": 57,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 16806,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 45,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 6532,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        2,
+        3
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 8,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 2723,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        1,
+        4,
+        5
+      ],
+      [
+        1,
+        2,
+        4,
+        5
+      ],
+      [
+        1,
+        3,
+        4,
+        5
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 18,
+    "ambiguity": true,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 3,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 14371,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        1,
+        4
+      ]
+    ],
+    "top_objects": [
+      1,
+      3
+    ],
+    "depends_on": [
+      1,
+      3
+    ],
+    "object_semantic_id": 24,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 12366,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 56,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 16827,
+    "query_object": 7,
+    "occlusion_paths": [
+      [
+        5,
+        7
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      5
+    ],
+    "object_semantic_id": 16,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 15148,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 4,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 16877,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        8,
+        5
+      ]
+    ],
+    "top_objects": [
+      8,
+      9,
+      10
+    ],
+    "depends_on": [
+      8,
+      2,
+      6,
+      7
+    ],
+    "object_semantic_id": 54,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 6653,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        5
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [],
+    "object_semantic_id": 25,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 8977,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        5
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [],
+    "object_semantic_id": 57,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 532,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        6,
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 2,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 579,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        3,
+        2,
+        1
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      2,
+      3
+    ],
+    "object_semantic_id": 59,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 9115,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        1,
+        3
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 6,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 2496,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        1,
+        7,
+        2,
+        4
+      ]
+    ],
+    "top_objects": [
+      1,
+      3
+    ],
+    "depends_on": [
+      2,
+      3
+    ],
+    "object_semantic_id": 30,
+    "ambiguity": false,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 3,
+    "num_paths": 1,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 3680,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 97,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 15957,
+    "query_object": 10,
+    "occlusion_paths": [
+      [
+        2,
+        10
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 66,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 11287,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 58,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 2418,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 69,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 2665,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        9,
+        1
+      ]
+    ],
+    "top_objects": [
+      9
+    ],
+    "depends_on": [
+      9
+    ],
+    "object_semantic_id": 32,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 15061,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        3,
+        4
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 5,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 10465,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        1,
+        4
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 60,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 9924,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        4,
+        3
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 5,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 6857,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        3,
+        4
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 20,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 14864,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        2,
+        3
+      ],
+      [
+        6,
+        12,
+        4,
+        3
+      ],
+      [
+        8,
+        12,
+        4,
+        3
+      ]
+    ],
+    "top_objects": [
+      8,
+      2,
+      6
+    ],
+    "depends_on": [
+      2,
+      4
+    ],
+    "object_semantic_id": 74,
+    "ambiguity": false,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 3,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 8235,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        4,
+        3
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 61,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 5271,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        3,
+        4
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 53,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 3050,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        3,
+        1
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 13,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 6244,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 61,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 1008,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        5
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [],
+    "object_semantic_id": 21,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 15762,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        5,
+        2
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      10,
+      4,
+      5
+    ],
+    "object_semantic_id": 17,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 16485,
+    "query_object": 13,
+    "occlusion_paths": [
+      [
+        1,
+        7,
+        13
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      7
+    ],
+    "object_semantic_id": 59,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 15885,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        4,
+        2
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 2,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 10999,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 48,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 13933,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 14,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 1491,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 13,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 8886,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        6,
+        4
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      6
+    ],
+    "object_semantic_id": 23,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 16763,
+    "query_object": 8,
+    "occlusion_paths": [
+      [
+        12,
+        8
+      ]
+    ],
+    "top_objects": [
+      12
+    ],
+    "depends_on": [
+      12
+    ],
+    "object_semantic_id": 81,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 5127,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        4,
+        3
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 52,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 8255,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        2,
+        1,
+        4
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 41,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 12787,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 97,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 15378,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        8,
+        3
+      ]
+    ],
+    "top_objects": [
+      8
+    ],
+    "depends_on": [
+      8
+    ],
+    "object_semantic_id": 60,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 16322,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 4,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 16143,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 24,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 15170,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        4,
+        3
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 72,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 15705,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        5,
+        1,
+        4
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 73,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 2410,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        6,
+        4
+      ]
+    ],
+    "top_objects": [
+      8,
+      6
+    ],
+    "depends_on": [
+      8,
+      6
+    ],
+    "object_semantic_id": 36,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 664,
+    "query_object": 6,
+    "occlusion_paths": [
+      [
+        6
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [],
+    "object_semantic_id": 15,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 4716,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        6,
+        2
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4,
+      6
+    ],
+    "object_semantic_id": 67,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 15008,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        3,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 8,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 648,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 21,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 14033,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        1,
+        3
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 44,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 2863,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 15,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 12299,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        10,
+        5,
+        9,
+        3
+      ],
+      [
+        10,
+        2,
+        8,
+        9,
+        3
+      ],
+      [
+        10,
+        5,
+        8,
+        9,
+        3
+      ],
+      [
+        10,
+        8,
+        9,
+        3
+      ]
+    ],
+    "top_objects": [
+      10
+    ],
+    "depends_on": [
+      9
+    ],
+    "object_semantic_id": 82,
+    "ambiguity": true,
+    "layer": 5,
+    "difficulty": "Hard",
+    "k_min": 3,
+    "num_paths": 4,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 3728,
+    "query_object": 6,
+    "occlusion_paths": [
+      [
+        3,
+        2,
+        6
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 30,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 2717,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 37,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 11294,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 97,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 1443,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 13,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 35,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 40,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 2553,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        2,
+        1,
+        4
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 36,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 1262,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        5,
+        3
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1,
+      5
+    ],
+    "object_semantic_id": 39,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 16465,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        4,
+        5
+      ],
+      [
+        6,
+        5
+      ]
+    ],
+    "top_objects": [
+      1,
+      6
+    ],
+    "depends_on": [
+      1,
+      4,
+      6
+    ],
+    "object_semantic_id": 38,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 3,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 11815,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 37,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 16321,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 9,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 11880,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        1,
+        3
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 46,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 7538,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        2,
+        4
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 17,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 1022,
+    "query_object": 9,
+    "occlusion_paths": [
+      [
+        9
+      ]
+    ],
+    "top_objects": [
+      9
+    ],
+    "depends_on": [],
+    "object_semantic_id": 44,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 15533,
+    "query_object": 12,
+    "occlusion_paths": [
+      [
+        3,
+        1,
+        12
+      ],
+      [
+        8,
+        1,
+        12
+      ],
+      [
+        8,
+        11,
+        1,
+        12
+      ],
+      [
+        3,
+        1,
+        7,
+        12
+      ],
+      [
+        8,
+        1,
+        7,
+        12
+      ],
+      [
+        8,
+        11,
+        1,
+        7,
+        12
+      ],
+      [
+        8,
+        7,
+        12
+      ]
+    ],
+    "top_objects": [
+      8,
+      3
+    ],
+    "depends_on": [
+      1,
+      2,
+      7
+    ],
+    "object_semantic_id": 79,
+    "ambiguity": false,
+    "layer": 5,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 7,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 10319,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 58,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 14575,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        4,
+        2,
+        5
+      ]
+    ],
+    "top_objects": [
+      8,
+      4
+    ],
+    "depends_on": [
+      8,
+      2
+    ],
+    "object_semantic_id": 97,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 17388,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        4,
+        5
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2,
+      4
+    ],
+    "object_semantic_id": 28,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 197,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        2,
+        3
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 9,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 2015,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 65,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 13765,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 71,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 5194,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        5,
+        2,
+        3
+      ],
+      [
+        5,
+        3
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      2,
+      5
+    ],
+    "object_semantic_id": 34,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 16032,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        5
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [],
+    "object_semantic_id": 82,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 16012,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        5,
+        3
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      5
+    ],
+    "object_semantic_id": 22,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 15060,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        3,
+        4
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 5,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 14874,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 46,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 617,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 25,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 16087,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "top_objects": [
+      3,
+      6
+    ],
+    "depends_on": [
+      2,
+      4,
+      6
+    ],
+    "object_semantic_id": 8,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 5926,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        4
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [],
+    "object_semantic_id": 53,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 16485,
+    "query_object": 12,
+    "occlusion_paths": [
+      [
+        1,
+        7,
+        13,
+        12
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      13,
+      7
+    ],
+    "object_semantic_id": 14,
+    "ambiguity": false,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 3,
+    "num_paths": 1,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 12303,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        4,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 21,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 16891,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        1,
+        5
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 60,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 7923,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        3,
+        1
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 37,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 14865,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        6,
+        12,
+        4,
+        1
+      ],
+      [
+        8,
+        12,
+        4,
+        1
+      ],
+      [
+        6,
+        12,
+        1
+      ],
+      [
+        8,
+        12,
+        1
+      ]
+    ],
+    "top_objects": [
+      8,
+      6
+    ],
+    "depends_on": [
+      4,
+      12
+    ],
+    "object_semantic_id": 14,
+    "ambiguity": true,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 4,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 2166,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        6,
+        3
+      ]
+    ],
+    "top_objects": [
+      2,
+      5
+    ],
+    "depends_on": [
+      5,
+      6
+    ],
+    "object_semantic_id": 58,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 7318,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 49,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 2438,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        1,
+        2,
+        5
+      ],
+      [
+        9,
+        7,
+        5
+      ]
+    ],
+    "top_objects": [
+      1,
+      9
+    ],
+    "depends_on": [
+      2,
+      7
+    ],
+    "object_semantic_id": 58,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 15867,
+    "query_object": 8,
+    "occlusion_paths": [
+      [
+        1,
+        2,
+        8
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 81,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 3008,
+    "query_object": 6,
+    "occlusion_paths": [
+      [
+        2,
+        6
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 26,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 2203,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 60,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 8147,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        4,
+        5
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 28,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 15499,
+    "query_object": 8,
+    "occlusion_paths": [
+      [
+        8
+      ]
+    ],
+    "top_objects": [
+      8
+    ],
+    "depends_on": [],
+    "object_semantic_id": 25,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 6157,
+    "query_object": 7,
+    "occlusion_paths": [
+      [
+        4,
+        7
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 32,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 7150,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        2,
+        3
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 39,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 1248,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 7,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 15677,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        4
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [],
+    "object_semantic_id": 43,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 16773,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        5
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [],
+    "object_semantic_id": 41,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 10171,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4,
+        3
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2,
+      4
+    ],
+    "object_semantic_id": 8,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 2717,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4,
+        3
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1,
+      4
+    ],
+    "object_semantic_id": 37,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 613,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        3,
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 48,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 11134,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 13,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 11376,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        2,
+        1
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 50,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 16710,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        4
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [],
+    "object_semantic_id": 80,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 969,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        3,
+        2,
+        1
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 2,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 12298,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        10,
+        2
+      ]
+    ],
+    "top_objects": [
+      10
+    ],
+    "depends_on": [
+      10
+    ],
+    "object_semantic_id": 68,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 14977,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        3,
+        4
+      ]
+    ],
+    "top_objects": [
+      3,
+      5
+    ],
+    "depends_on": [
+      3,
+      5
+    ],
+    "object_semantic_id": 8,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 9768,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 44,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 15481,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        5
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [],
+    "object_semantic_id": 1,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 14826,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        3,
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 49,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 10148,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 48,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 2135,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        3,
+        4
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 43,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 12900,
+    "query_object": 6,
+    "occlusion_paths": [
+      [
+        6
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [],
+    "object_semantic_id": 15,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 12298,
+    "query_object": 12,
+    "occlusion_paths": [
+      [
+        10,
+        5,
+        1,
+        12
+      ],
+      [
+        10,
+        1,
+        12
+      ],
+      [
+        10,
+        5,
+        12
+      ],
+      [
+        10,
+        2,
+        8,
+        7,
+        9,
+        12
+      ],
+      [
+        10,
+        5,
+        8,
+        7,
+        9,
+        12
+      ],
+      [
+        10,
+        8,
+        7,
+        9,
+        12
+      ],
+      [
+        10,
+        2,
+        8,
+        9,
+        12
+      ],
+      [
+        10,
+        5,
+        8,
+        9,
+        12
+      ],
+      [
+        10,
+        8,
+        9,
+        12
+      ],
+      [
+        10,
+        12
+      ]
+    ],
+    "top_objects": [
+      10
+    ],
+    "depends_on": [
+      1,
+      10,
+      5,
+      9
+    ],
+    "object_semantic_id": 72,
+    "ambiguity": true,
+    "layer": 6,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 10,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 9330,
+    "query_object": 6,
+    "occlusion_paths": [
+      [
+        1,
+        6
+      ],
+      [
+        4,
+        5,
+        2,
+        6
+      ]
+    ],
+    "top_objects": [
+      1,
+      4
+    ],
+    "depends_on": [
+      1,
+      2
+    ],
+    "object_semantic_id": 10,
+    "ambiguity": true,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 2105,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        3,
+        4
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 43,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 16346,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        3,
+        5
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 2,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 11230,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        1,
+        3
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 34,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 4253,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        3,
+        1
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 62,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 11365,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 97,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 4094,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        2,
+        1
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 30,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 4922,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        4,
+        2
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 34,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 5126,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        4,
+        3
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 52,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 2523,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        2,
+        7,
+        4
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      7
+    ],
+    "object_semantic_id": 36,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 9121,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 7,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 3745,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        3,
+        1
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 59,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 216,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        4
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [],
+    "object_semantic_id": 9,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 8406,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 61,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 8502,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        1,
+        2,
+        4
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 56,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 12089,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        4,
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      3,
+      4
+    ],
+    "object_semantic_id": 28,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 5266,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 20,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 15640,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        4
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [],
+    "object_semantic_id": 48,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 3031,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        6,
+        4,
+        3,
+        1
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 13,
+    "ambiguity": true,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 3,
+    "num_paths": 1,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 16688,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        3,
+        2
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 73,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 10773,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 1,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 14050,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        3,
+        5
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 44,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 8457,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 9,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 83,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 7,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 12021,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        3,
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 1,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 12511,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 43,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 5714,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        3,
+        4,
+        5
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 70,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 13276,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        2,
+        1
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 6,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 3376,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        2,
+        1,
+        5,
+        4
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      5
+    ],
+    "object_semantic_id": 22,
+    "ambiguity": true,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 3,
+    "num_paths": 1,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 14783,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        4,
+        2
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 62,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 8554,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1,
+      2
+    ],
+    "object_semantic_id": 28,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 1324,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        1,
+        2
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      1
+    ],
+    "object_semantic_id": 58,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 17182,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        2
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [],
+    "object_semantic_id": 21,
+    "ambiguity": true,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 14812,
+    "query_object": 12,
+    "occlusion_paths": [
+      [
+        9,
+        12
+      ],
+      [
+        11,
+        12
+      ]
+    ],
+    "top_objects": [
+      9,
+      11
+    ],
+    "depends_on": [
+      9,
+      11
+    ],
+    "object_semantic_id": 61,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 17439,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 12,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 14744,
+    "query_object": 10,
+    "occlusion_paths": [
+      [
+        8,
+        10
+      ],
+      [
+        11,
+        10
+      ]
+    ],
+    "top_objects": [
+      8,
+      11
+    ],
+    "depends_on": [
+      8,
+      11
+    ],
+    "object_semantic_id": 63,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 1697,
+    "query_object": 9,
+    "occlusion_paths": [
+      [
+        3,
+        8,
+        9
+      ]
+    ],
+    "top_objects": [
+      3,
+      6
+    ],
+    "depends_on": [
+      8,
+      6
+    ],
+    "object_semantic_id": 16,
+    "ambiguity": true,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 10931,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 13,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 16062,
+    "query_object": 7,
+    "occlusion_paths": [
+      [
+        7
+      ]
+    ],
+    "top_objects": [
+      7
+    ],
+    "depends_on": [],
+    "object_semantic_id": 15,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 14736,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        7,
+        5
+      ]
+    ],
+    "top_objects": [
+      7
+    ],
+    "depends_on": [
+      7
+    ],
+    "object_semantic_id": 25,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 12364,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        2,
+        1
+      ]
+    ],
+    "top_objects": [
+      2
+    ],
+    "depends_on": [
+      2
+    ],
+    "object_semantic_id": 41,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 2283,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        1,
+        3,
+        5
+      ],
+      [
+        1,
+        7,
+        3,
+        5
+      ],
+      [
+        1,
+        7,
+        5
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [
+      3,
+      7
+    ],
+    "object_semantic_id": 49,
+    "ambiguity": true,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 3,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 9137,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        4,
+        1,
+        5
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      1,
+      4
+    ],
+    "object_semantic_id": 63,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 5134,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        3,
+        4
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 20,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 3652,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        5,
+        4,
+        1
+      ],
+      [
+        5,
+        1
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [
+      4,
+      5
+    ],
+    "object_semantic_id": 18,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 8564,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        4,
+        1
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      4
+    ],
+    "object_semantic_id": 30,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 14712,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        6,
+        4
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      6
+    ],
+    "object_semantic_id": 77,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 1697,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        3,
+        8,
+        9,
+        11,
+        1
+      ]
+    ],
+    "top_objects": [
+      3,
+      5,
+      6
+    ],
+    "depends_on": [
+      11,
+      5
+    ],
+    "object_semantic_id": 58,
+    "ambiguity": true,
+    "layer": 5,
+    "difficulty": "Hard",
+    "k_min": 4,
+    "num_paths": 1,
+    "new_difficulty": "Hard"
+  },
+  {
+    "image_id": 8098,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        3,
+        1
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 64,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 8280,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        3,
+        2
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 6,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 7479,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        6,
+        3
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      6
+    ],
+    "object_semantic_id": 64,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 8932,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        1
+      ]
+    ],
+    "top_objects": [
+      1
+    ],
+    "depends_on": [],
+    "object_semantic_id": 64,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 9138,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        4,
+        1,
+        5
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      1,
+      4
+    ],
+    "object_semantic_id": 63,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 3738,
+    "query_object": 2,
+    "occlusion_paths": [
+      [
+        3,
+        2
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [
+      3
+    ],
+    "object_semantic_id": 6,
+    "ambiguity": true,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 335,
+    "query_object": 5,
+    "occlusion_paths": [
+      [
+        5
+      ]
+    ],
+    "top_objects": [
+      5
+    ],
+    "depends_on": [],
+    "object_semantic_id": 69,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 3425,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        6,
+        1,
+        2,
+        4
+      ],
+      [
+        6,
+        4
+      ]
+    ],
+    "top_objects": [
+      6
+    ],
+    "depends_on": [
+      8,
+      2,
+      6
+    ],
+    "object_semantic_id": 5,
+    "ambiguity": false,
+    "layer": 4,
+    "difficulty": "Hard",
+    "k_min": 1,
+    "num_paths": 2,
+    "new_difficulty": "Medium"
+  },
+  {
+    "image_id": 7992,
+    "query_object": 4,
+    "occlusion_paths": [
+      [
+        3,
+        4
+      ]
+    ],
+    "top_objects": [
+      2,
+      3
+    ],
+    "depends_on": [
+      1,
+      2,
+      3
+    ],
+    "object_semantic_id": 49,
+    "ambiguity": false,
+    "layer": 2,
+    "difficulty": "Medium",
+    "k_min": 1,
+    "num_paths": 1,
+    "new_difficulty": "Easy"
+  },
+  {
+    "image_id": 16226,
+    "query_object": 3,
+    "occlusion_paths": [
+      [
+        3
+      ]
+    ],
+    "top_objects": [
+      3
+    ],
+    "depends_on": [],
+    "object_semantic_id": 6,
+    "ambiguity": false,
+    "layer": 1,
+    "difficulty": "Easy",
+    "k_min": 0,
+    "num_paths": 1,
+    "new_difficulty": "No-Occ"
+  },
+  {
+    "image_id": 15122,
+    "query_object": 1,
+    "occlusion_paths": [
+      [
+        4,
+        2,
+        1
+      ]
+    ],
+    "top_objects": [
+      4
+    ],
+    "depends_on": [
+      2,
+      4
+    ],
+    "object_semantic_id": 3,
+    "ambiguity": false,
+    "layer": 3,
+    "difficulty": "Hard",
+    "k_min": 2,
+    "num_paths": 1,
+    "new_difficulty": "Medium"
+  }
+]
