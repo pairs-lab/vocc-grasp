@@ -1,4 +1,4 @@
-# VOCC-Grasp: Calibrated Occlusion Reasoning for Robotic Grasping
+# CPOR-Grasp: Calibrated Probabilistic Obstruction Reasoning with Vision-Language Models for Grasping in Clutter
 
 Repository for VOCC-Grasp. Given an RGB-D frame and a free-form request, the method predicts
 which object must be removed first to reach the target, and returns a 6-DoF grasp for it.
