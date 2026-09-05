@@ -1,13 +1,11 @@
-# VOCC-Grasp: Calibrated occlusion reasoning for grasping in clutter
+# VOCC-Grasp: Calibrated Occlusion Reasoning for Robotic Grasping
 
-This is the repository for VOCC-Grasp, a pipeline that answers **which object to move first**
-when the object a user asks for is buried in a cluttered bin, and returns a 6-DoF grasp for it.
+Repository for VOCC-Grasp. Given an RGB-D frame and a free-form request, the method predicts
+which object must be removed first to reach the target, and returns a 6-DoF grasp for it.
 
-A VLM proposes the occlusion structure of the bin and an amodal segmenter scores the same
-structure from geometry. Both edge sources are calibrated and fused into one probability per
-edge. The posterior is then taken over **acyclic** occlusion graphs — not a single graph — and
-the resulting free-set marginals carry an approximation certificate, so the decision to act or
-defer is made under a bound rather than a guess.
+A VLM and an amodal segmenter each propose occlusion edges. Both sources are calibrated and
+fused, the posterior is taken over acyclic occlusion graphs by Top-K MAP, and the free-set
+marginals come with an approximation certificate used to act or defer.
 
 ```
 RGB-D
@@ -17,7 +15,7 @@ RGB-D
                     adaptive Platt per source, then logit fusion          configs/pipeline.yaml
                               │
                     Top-K MAP over the acyclic support D
-                    exact enumeration ≤ 20 edges, else ILP with
+                    exact enumeration, ILP with
                     lazy acyclicity + no-good cuts (CBC)
                               │
                     free-set marginals q_o, q_X  +  certificate ε_K
@@ -29,229 +27,267 @@ RGB-D
   FGC-GraspNet on the chosen object ──────────────────────────────────► 6-DoF pose
 ```
 
-The certificate is tail-model-free: `Z̄ = Π(1 − p_ij p_ji) ≥ Z` bounds the partition function
-from above, so `ε_K = (Z̄ − Z_K)/Z̄` bounds the marginal error without assuming anything about
-the unenumerated tail. [`math/Mathematical.md`](math/Mathematical.md) derives it.
+The calibration is fit once on synthetic data and used unchanged for synthetic evaluation, real
+evaluation and deployment. Nothing is refit or retrained per domain.
 
-The calibration is fit **once**, on a scene-disjoint slice of the synthetic training split, and
-used unchanged for synthetic evaluation, real evaluation and deployment. Nothing is refit per
-domain and nothing is retrained.
+## Resources
 
-## Setup
+| Resource | Link | Description |
+| --- | --- | --- |
+| Synthetic dataset | [Hugging Face](https://huggingface.co/datasets/chiencn/vocc_synthetic) | UnoBench `test_GT_small_1800` split: 1800 cases, 1400 images. |
+| Real dataset | [Hugging Face](https://huggingface.co/datasets/chiencn/vocc_real) | MetaGraspNet-V2 evaluation subset: 838 cases, 511 scenes. |
+| UOAIS | [gist-ailab/uoais](https://github.com/gist-ailab/uoais) | Amodal segmenter, fine-tuned here as `uoais-ft/`. |
+| FGC-GraspNet | [luyh20/FGC-GraspNet](https://github.com/luyh20/FGC-GraspNet) | Grasp pose model, vendored as `FreeGrasp_code/`. |
 
-### Installation Requirements
+## Contents
 
-- Torch 2.7.0, Torchvision 0.22.0
-- CUDA 12.8
-- A CUDA GPU for the demo and for grasp inference; the reports run on CPU
-- Tested on an RTX 5060 Ti (sm_120)
+- [Structure](#structure)
+- [Installation](#installation)
+- [Dataset](#dataset)
+- [Inference](#inference)
+- [Demo](#demo)
+- [Configuration](#configuration)
+- [License](#license)
 
-### Installation Step
+## Structure
 
-1. **Create the environment and build everything**
-   ```bash
-   ./scripts/install.sh uoais
-   conda activate vocc
-   ```
-   This creates the conda env `vocc` (python 3.10), installs torch cu128 and
-   `requirements.txt`, compiles the FGC-GraspNet CUDA extensions, and installs
-   detectron2 + AdelaiDet. The `uoais` argument is required for the demo.
+```text
+vocc-grasp/
+|-- demo.py                          RGB-D frame -> grasp pose
+|-- run_gemini_uoais_ref.py          the method: VLM reasoning over a UOAIS geometry table
+|-- run_gemini_uoais_ref_batch.py    batch driver, synthetic
+|-- run_gemini_uoais_ref_batch_real.py  batch driver, real
+|-- export_fused_weighted.py         calibrate + fuse -> per-edge CSV
+|-- configs/pipeline.yaml            all thresholds
+|-- calibration/                     frozen calibration parameters
+|-- math/report_unobench.py          evaluation and reporting
+|-- grasp_viz/                       mask -> point cloud -> FGC-GraspNet -> renders
+|-- demo_rgbd/                       28 real RGB-D scenes + reference results
+|-- uoais-ft/                        UOAIS, fine-tuned
+`-- FreeGrasp_code/                  FGC-GraspNet
+```
 
-1. **Download the FGC-GraspNet checkpoint**
-   ```bash
-   ./scripts/download_checkpoints.sh
-   ```
-   Fetches `checkpoint_fgc.tar` (13 MB) into `FreeGrasp_code/logs/`.
+## Installation
 
-1. **Download the UOAIS weights**
+Create the Conda environment and build everything:
 
-   These need the upstream terms accepted and cannot be redistributed here. Get
-   `R50_rgbdconcat_mlc_occatmask_hom_concat` from
-   [gist-ailab/uoais](https://github.com/gist-ailab/uoais) and place it at:
-   ```
-   uoais-ft/output/R50_rgbdconcat_mlc_occatmask_hom_concat/model_final.pth
-   ```
+```bash
+./scripts/install.sh uoais
+conda activate vocc
+```
 
-1. **Set your Gemini API key**
-   ```bash
-   cp .env.example .env      # then fill in GEMINI_API_KEY
-   ```
+This creates the env `vocc` (python 3.10), installs torch 2.7.0 cu128 and `requirements.txt`,
+compiles the FGC-GraspNet CUDA extensions, and installs detectron2 and AdelaiDet. Tested on an
+RTX 5060 Ti (sm_120) with CUDA 12.8.
 
-Without the `uoais` argument and the UOAIS weights you can still run the reports and the data
-self-check, but not the demo.
+Download the FGC-GraspNet checkpoint:
 
-### Potential Issues of Installation
+```bash
+./scripts/download_checkpoints.sh
+```
 
-1. `fatal error: cusparse.h: No such file or directory` when building the FGC extensions
+The UOAIS weights need the upstream terms accepted and cannot be redistributed. Download
+`R50_rgbdconcat_mlc_occatmask_hom_concat` from
+[gist-ailab/uoais](https://github.com/gist-ailab/uoais) and place it at:
 
-- **Cause**: `torch.utils.cpp_extension` looks for the CUDA headers only under `$CUDA_HOME/include`.
-- **Solution**: `scripts/build_fgc_extensions.sh` symlinks them there before compiling. Run it
-  through `scripts/install.sh` rather than calling `setup.py` directly.
+```text
+uoais-ft/output/R50_rgbdconcat_mlc_occatmask_hom_concat/model_final.pth
+```
 
-2. detectron2 or AdelaiDet fails to build
+Set the Gemini API key:
 
-- **Solution**: they must be built against the torch already installed. Follow
-  [gist-ailab/uoais](https://github.com/gist-ailab/uoais), which pins the versions that work
-  together. `uoais-ft/` here is that repository with a local C++/CUDA fix and this project's
-  fine-tuning.
+```bash
+cp .env.example .env      # then fill in GEMINI_API_KEY
+```
 
 ## Dataset
 
-The demo needs no dataset — 28 real RGB-D scenes ship in [`demo_rgbd/`](demo_rgbd/). The
-evaluation splits are already in `UnoBench/subset_difficulty/`; only the image data and
-`gt_for_nlp.json` are downloaded separately.
+Neither dataset is needed to reproduce the reported scores — the fused edge scores ship in the
+repository. Download them to regenerate predictions from raw RGB-D, or to run the grasp stage.
 
-- **UnoBench (synthetic)**: [chiencn/vocc_synthetic](https://huggingface.co/datasets/chiencn/vocc_synthetic)
-  — the `test_GT_small_1800` split, 1800 cases over 1400 images (~2.3 GB download, ~16 GB extracted)
-- **MetaGraspNet-V2 (real)**: `<placeholder: filtered subset link>`
+### Synthetic
 
-**Download the synthetic split**
+Download UnoBench from [Hugging Face](https://huggingface.co/datasets/chiencn/vocc_synthetic):
 
 ```bash
-pip install huggingface_hub
-hf download chiencn/vocc_synthetic --repo-type dataset --local-dir /tmp/unobench_dl
+hf download chiencn/vocc_synthetic --repo-type dataset --local-dir /tmp/vocc_syn
 
 mkdir -p UnoBench/_extracted
 for f in images depth annotations; do
     mkdir -p UnoBench/_extracted/$f
-    tar -xzf /tmp/unobench_dl/$f.tar.gz -C UnoBench/_extracted/$f
+    tar -xzf /tmp/vocc_syn/$f.tar.gz -C UnoBench/_extracted/$f
 done
-cp /tmp/unobench_dl/meta/gt_for_nlp.json UnoBench/
+cp /tmp/vocc_syn/meta/gt_for_nlp.json UnoBench/
 ```
 
-The result is the layout the code expects:
+Expected layout:
 
-```
-vocc-grasp
-└── UnoBench
-    ├── gt_for_nlp.json
-    ├── subset_difficulty/          (already in this repository)
-    └── _extracted
-        ├── images/image_000003.png
-        ├── depth/image_000003.npy
-        └── annotations/image_000003.npy
+```text
+vocc-grasp/
+|-- UnoBench/gt_for_nlp.json
+|-- UnoBench/subset_difficulty/          (already in this repository)
+`-- UnoBench/_extracted/{images,depth,annotations}/
 ```
 
-UnoBench depth is in **centimetres** and ships no intrinsics; a pinhole is synthesised from a
-60° vertical FOV.
+Depth is in centimetres. UnoBench ships no intrinsics; a pinhole is synthesised from a 60°
+vertical FOV.
 
-## Running demo
+### Real
 
-One RGB-D frame in, a grasp pose out.
-
-1. **Run the demo**
-   ```bash
-   conda activate vocc
-   python demo.py --case img000071_q1
-   ```
-
-   The user asks for the **top pouch**; an **orange** sits on it. The pipeline says clear the
-   orange first and returns a pose for it.
-
-   ```
-   [2/5] detecting objects  [Gemini]
-         5 objects: 1=soap refill pouch, 2=orange, 3=deodorant roll-on, 4=food can, 5=oil filter
-   [3/5] amodal segmentation + occlusion geometry  [UOAIS]
-         11 instances, 1 occlusion edge
-   [4/5] reasoning  [Gemini]
-         grasp first: id=2 (orange), chain 1 step(s), confidence 90.0
-   [5/5] grasp pose  [FGC-GraspNet]
-         gripper: robotiq_2f85, jaws <= 80 mm
-         grasp_found=True
-   ```
-
-   `output/img000071_q1/` holds the annotated renders, the orbit GIF, `grasp_pose.json`
-   (6-DoF, camera frame) and `plan.json` (the removal order).
-
-1. **Reproduce the bundled reference exactly**
-   ```bash
-   python demo.py --case img000071_q1 --masks provided
-   ```
-
-   Object names, badge numbers and the confidence come from the VLM and differ between runs;
-   which object gets picked does not. Running against the bundled instance masks instead of
-   UOAIS's reproduces [`demo_rgbd/expected/img000071_q1.json`](demo_rgbd/expected/):
-   translation `[0.0561, -0.0230, 0.6495]` m, score `0.642`, funnel 262 → 200 → 135 → 61.
-
-1. **Run on your own frame**
-   ```bash
-   python demo.py --rgb scene.png --depth depth.png --intrinsics k.json --request "the white box"
-   ```
-
-**Input RGB-D and instruction (take the top pouch). Output grasp pose:**
-
-<table align="center">
-  <tr>
-    <td align="center"><img src="assets/pipeline_example.png" width="240px"><br><b>Reasoning</b></td>
-    <td align="center"><img src="assets/grasp_orbit.gif" width="240px"><br><b>Point cloud</b></td>
-  </tr>
-</table>
-
-For more scenes please check the folder `demo_rgbd/`.
-
-## Running on dataset
-
-Both commands run from the shipped edge scores, so neither needs a GPU or an API key.
-
-1. **Synthetic — UnoBench `test_GT_small_1800`**
-   ```bash
-   python math/report_unobench.py \
-       --csv logs/edge_scores_csv_test1800_full/fused_adaptive_w0.5_0.5_m1.csv \
-       --tau-edge 0.09
-   ```
-
-1. **Real — the 838-case MetaGraspNet-V2 subset**
-   ```bash
-   python math/report_unobench.py \
-       --csv logs/edge_scores_csv_real_subset/fused_adaptive_w0.5_0.5_m1.csv \
-       --gt test_GT_subset_hardall_easy300_medium300.json \
-       --tau-edge 0.09
-   ```
-
-To regenerate those CSVs from raw predictions rather than using the shipped ones, run
-`export_scores.py` then `export_fused_weighted.py`.
-
-## Self-check
+Download the MetaGraspNet-V2 subset from
+[Hugging Face](https://huggingface.co/datasets/chiencn/vocc_real):
 
 ```bash
-python demo_rgbd/verify.py         # data integrity — no GPU, no key, no weights
-python demo_rgbd/verify.py --run   # replay the grasp stage — needs a GPU and the FGC weights
+hf download chiencn/vocc_real --repo-type dataset --local-dir /tmp/vocc_real
+
+for f in scenes images masks_crop masks_full; do
+    tar -xzf /tmp/vocc_real/$f.tar.gz -C .
+done
+cp /tmp/vocc_real/meta/real_world_mapping_fixed.json \
+   /tmp/vocc_real/meta/real_object_names.json .
 ```
 
-28/28 scenes, recorded pose recovered within 0.001 mm and 0.044°.
+Expected layout:
+
+```text
+vocc-grasp/
+|-- real_world_mapping_fixed.json
+|-- real_object_names.json
+|-- images/image_000000.png
+|-- masks_npy_real_crop/image_000000.npy
+`-- data_ifl_0/mnt/data1/data_ifl_real/scene0/{3.npz,3_rgb.png,3_camera_params.json}
+```
+
+Depth is in centimetres with about 20% NaN, and these carry real intrinsics.
+
+## Inference
+
+### Reproduce the reported scores
+
+These read the fused edge scores shipped in `logs/`. No GPU, no API key, no dataset download.
+
+```bash
+python math/report_unobench.py \
+  --csv logs/edge_scores_csv_test1800_full/fused_adaptive_w0.5_0.5_m1.csv \
+  --tau-edge 0.09
+
+python math/report_unobench.py \
+  --csv logs/edge_scores_csv_real_subset/fused_adaptive_w0.5_0.5_m1.csv \
+  --gt test_GT_subset_hardall_easy300_medium300.json \
+  --tau-edge 0.09
+```
+
+Both report success-rate metrics, occlusion-reasoning metrics and MP-NED by difficulty level.
+
+### Regenerate predictions from raw RGB-D
+
+Needs the dataset, a GPU and a Gemini API key. Each source is run separately, then fused.
+
+Synthetic:
+
+```bash
+python run_uoais_pipeline.py \
+  --gt-path UnoBench/gt_for_nlp.json \
+  --out logs/uoais_1800_v2
+
+python run_gemini_uoais_ref_batch.py \
+  --gt-path UnoBench/gt_for_nlp.json \
+  --out logs/gemini_uoais_ref_test_1800
+
+python export_fused_weighted.py \
+  --vlm-log logs/gemini_uoais_ref_test_1800 \
+  --uoais-log logs/uoais_1800_v2 \
+  --gt-path UnoBench/subset_difficulty/test_GT_small_1800.json \
+  --out logs/edge_scores_csv_test1800_full \
+  --weights "0.5,0.5,-1"
+```
+
+Real:
+
+```bash
+python run_uoais_pipeline_real.py \
+  --gt-path test_GT_subset_hardall_easy300_medium300.json \
+  --out logs/uoais_pipeline_real
+
+python run_gemini_uoais_ref_batch_real.py \
+  --gt-path test_GT_subset_hardall_easy300_medium300.json \
+  --id-map real_world_mapping_fixed.json \
+  --out logs/gemini_uoais_ref_real_subset
+
+python export_fused_weighted.py \
+  --vlm-log logs/gemini_uoais_ref_real_subset \
+  --uoais-log logs/uoais_pipeline_real \
+  --gt-path test_GT_subset_hardall_easy300_medium300.json \
+  --out logs/edge_scores_csv_real_subset \
+  --weights "0.5,0.5,-1"
+```
+
+`--weights` is `w_vlm,w_3d,w_prior`; `0.5,0.5,-1` produces
+`fused_adaptive_w0.5_0.5_m1.csv`, the file the report above reads.
+
+## Demo
+
+One RGB-D frame in, a grasp pose out. 28 real scenes ship in `demo_rgbd/`, so this runs without
+any dataset download:
+
+```bash
+python demo.py --case img000071_q1
+```
+
+The request is `top pouch`; an orange sits on it. The method removes the orange first:
+
+```text
+[2/5] detecting objects  [Gemini]
+      5 objects: 1=soap refill pouch, 2=orange, 3=deodorant roll-on, 4=food can, 5=oil filter
+[3/5] amodal segmentation + occlusion geometry  [UOAIS]
+      11 instances, 1 occlusion edge
+[4/5] reasoning  [Gemini]
+      grasp first: id=2 (orange), chain 1 step(s), confidence 90.0
+[5/5] grasp pose  [FGC-GraspNet]
+      gripper: robotiq_2f85, jaws <= 80 mm
+      grasp_found=True
+```
+
+<p align="center">
+  <img src="assets/pipeline_example.png" width="420" alt="reasoning" />
+  <img src="assets/grasp_orbit.gif" width="300" alt="grasp pose" />
+</p>
+
+`output/img000071_q1/` holds the renders, the orbit GIF, `grasp_pose.json` (6-DoF, camera frame)
+and `plan.json` (the removal order).
+
+Object names, ids and confidence come from the VLM and vary between runs; the object chosen does
+not. To reproduce the bundled reference exactly:
+
+```bash
+python demo.py --case img000071_q1 --masks provided
+```
+
+This matches `demo_rgbd/expected/img000071_q1.json`: translation `[0.0561, -0.0230, 0.6495]` m,
+score `0.642`.
+
+Run on your own frame:
+
+```bash
+python demo.py --rgb scene.png --depth depth.png --intrinsics k.json --request "the white box"
+```
+
+Check the bundled data and replay the grasp stage:
+
+```bash
+python demo_rgbd/verify.py         # integrity only
+python demo_rgbd/verify.py --run   # grasp replay, needs a GPU and the FGC weights
+```
 
 ## Configuration
 
-Every threshold the pipeline runs on lives in **[`configs/pipeline.yaml`](configs/pipeline.yaml)**
-— detector thresholds, edge-scoring rules, fusion weights, Top-K solver limits, decision
-thresholds, grasp filters. `demo.py` loads it; the batch drivers take the same values as
-defaults. The reported numbers were produced with that file unchanged.
+Edge probabilities are calibrated with an N-candidate adaptive Platt scaling per source, then
+fused in logit space at equal weights. Both are fit once on synthetic data and frozen.
 
-| | file |
-|---|---|
-| Pipeline parameters | [`configs/pipeline.yaml`](configs/pipeline.yaml) |
-| Calibration coefficients | [`calibration/adaptive_platt_model.json`](calibration/) (VLM), `adaptive_platt_3d_model.json` (3D) |
-| Fit report: splits, ECE before/after | [`calibration/README.md`](calibration/README.md) |
-| Gripper geometry | [`grasp_viz/gripper_robotiq_2f85.yaml`](grasp_viz/gripper_robotiq_2f85.yaml) |
+Every threshold is in [`configs/pipeline.yaml`](configs/pipeline.yaml). The calibration
+coefficients and their fit report are in [`calibration/`](calibration/README.md).
 
-## Structure
+## License
 
-```
-demo.py                     RGB-D → grasp pose
-run_gemini_uoais_ref*.py    the model: VLM reasoning over a UOAIS geometry table
-export_fused_weighted.py    calibrate + fuse → the edge CSVs the math stack reads
-math/                       marginalisation, decision policy, reporting
-calibration/                frozen Platt parameters and their fit reports
-grasp_viz/                  segmentation → point cloud → FGC → renders
-configs/pipeline.yaml       every threshold, in one place
-demo_rgbd/                  28 real RGB-D scenes + expected results + verify.py
-uoais-ft/                   UOAIS, fine-tuned      github.com/gist-ailab/uoais
-FreeGrasp_code/             FGC-GraspNet           github.com/luyh20/FGC-GraspNet
-```
-
----
-
-# License
-
-MIT for the code written here. `FreeGrasp_code/` and `uoais-ft/` keep their upstream licences;
-`demo_rgbd/` follows MetaGraspNet-V2's terms.
+MIT for the code written here. `FreeGrasp_code/` and `uoais-ft/` keep their upstream licenses;
+`demo_rgbd/` and both datasets follow MetaGraspNet-V2's terms.
