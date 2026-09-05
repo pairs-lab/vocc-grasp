@@ -1,0 +1,38 @@
+# secrets
+.env
+
+# model weights (downloaded -- see scripts/download_checkpoints.sh)
+*.pth
+*.tar
+*.ckpt
+*.pt
+*.onnx
+
+# demo output
+/output/
+
+# datasets (see README -- these live outside the repo)
+/UnoBench/_extracted/
+/UnoBench/meta_data/
+/images/
+/masks_npy_real_crop/
+/data_ifl_*/
+
+# arrays are weights by default; the bundled demo scenes are PNG so they are unaffected
+*.npy
+*.npz
+
+# python
+__pycache__/
+*.py[cod]
+build/
+dist/
+*.egg-info/
+*.so
+*.o
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+/env/
+/venv/
+/ENV/
