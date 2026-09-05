@@ -1,0 +1,25 @@
+# Install torch first, with the CUDA index matching your GPU. This is the tested
+# combination (RTX 5060 Ti, sm_120):
+#
+#   pip install torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorch.org/whl/cu128
+#   pip install -r requirements.txt
+#
+# Then build FGC-GraspNet's CUDA extensions:  scripts/build_fgc_extensions.sh
+# UOAIS additionally needs detectron2 + AdelaiDet:  scripts/install.sh uoais
+
+numpy==2.2.6
+scipy==1.15.3
+pandas==2.3.3
+opencv-python==4.13.0.92
+pillow==12.2.0
+matplotlib==3.10.9
+pyyaml==6.0.3
+editdistance==0.8.1
+
+# the math stack's exact top-k solver (freeset.inference.topk); imported lazily, so the
+# reports run without it, but `run_csv.py --topk` and the top-k tables need it
+pulp==3.3.2
+
+# Gemini
+google-genai==2.10.0
+python-dotenv==1.2.2
