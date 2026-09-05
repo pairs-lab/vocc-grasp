@@ -36,8 +36,6 @@ evaluation and deployment. Nothing is refit or retrained per domain.
 | --- | --- | --- |
 | Synthetic dataset | [Hugging Face](https://huggingface.co/datasets/chiencn/vocc_synthetic) | UnoBench `test_GT_small_1800` split: 1800 cases, 1400 images. |
 | Real dataset | [Hugging Face](https://huggingface.co/datasets/chiencn/vocc_real) | MetaGraspNet-V2 evaluation subset: 838 cases, 511 scenes. |
-| UOAIS | [gist-ailab/uoais](https://github.com/gist-ailab/uoais) | Amodal segmenter, fine-tuned here as `uoais-ft/`. |
-| FGC-GraspNet | [luyh20/FGC-GraspNet](https://github.com/luyh20/FGC-GraspNet) | Grasp pose model, vendored as `FreeGrasp_code/`. |
 
 ## Contents
 
@@ -86,14 +84,6 @@ Download the FGC-GraspNet checkpoint:
 ./scripts/download_checkpoints.sh
 ```
 
-The UOAIS weights need the upstream terms accepted and cannot be redistributed. Download
-`R50_rgbdconcat_mlc_occatmask_hom_concat` from
-[gist-ailab/uoais](https://github.com/gist-ailab/uoais) and place it at:
-
-```text
-uoais-ft/output/R50_rgbdconcat_mlc_occatmask_hom_concat/model_final.pth
-```
-
 Set the Gemini API key:
 
 ```bash
@@ -129,9 +119,6 @@ vocc-grasp/
 `-- UnoBench/_extracted/{images,depth,annotations}/
 ```
 
-Depth is in centimetres. UnoBench ships no intrinsics; a pinhole is synthesised from a 60°
-vertical FOV.
-
 ### Real
 
 Download the MetaGraspNet-V2 subset from
@@ -157,8 +144,6 @@ vocc-grasp/
 |-- masks_npy_real_crop/image_000000.npy
 `-- data_ifl_0/mnt/data1/data_ifl_real/scene0/{3.npz,3_rgb.png,3_camera_params.json}
 ```
-
-Depth is in centimetres with about 20% NaN, and these carry real intrinsics.
 
 ## Inference
 
@@ -234,22 +219,8 @@ any dataset download:
 python demo.py --case img000071_q1
 ```
 
-The request is `top pouch`; an orange sits on it. The method removes the orange first:
-
-```text
-[2/5] detecting objects  [Gemini]
-      5 objects: 1=soap refill pouch, 2=orange, 3=deodorant roll-on, 4=food can, 5=oil filter
-[3/5] amodal segmentation + occlusion geometry  [UOAIS]
-      11 instances, 1 occlusion edge
-[4/5] reasoning  [Gemini]
-      grasp first: id=2 (orange), chain 1 step(s), confidence 90.0
-[5/5] grasp pose  [FGC-GraspNet]
-      gripper: robotiq_2f85, jaws <= 80 mm
-      grasp_found=True
-```
-
 <p align="center">
-  <img src="assets/pipeline_example.png" width="420" alt="reasoning" />
+  <img src="assets/pipeline_example.png" width="300" alt="reasoning" />
   <img src="assets/grasp_orbit.gif" width="300" alt="grasp pose" />
 </p>
 
