@@ -10,7 +10,7 @@ marginals come with an approximation certificate used to act or defer.
 ```
 RGB-D
   ├── Gemini ──────────► occlusion chain, p(edge)
-  └── UOAIS  ──────────► amodal masks, p(edge) from contact / hidden area / depth order
+  └── UOAIS-FT  ──────────► amodal masks, p(edge) from contact / hidden area / depth order
                               │
                     adaptive Platt per source, then logit fusion          configs/pipeline.yaml
                               │
@@ -52,7 +52,7 @@ evaluation and deployment. Nothing is refit or retrained per domain.
 ```text
 CPOR-grasp/
 |-- demo.py                          RGB-D frame -> grasp pose
-|-- run_gemini_uoais_ref.py          the method: VLM reasoning over a UOAIS geometry table
+|-- run_gemini_uoais_ref.py          the method: VLM reasoning over a UOAIS-FT geometry table
 |-- run_gemini_uoais_ref_batch.py    batch driver, synthetic
 |-- run_gemini_uoais_ref_batch_real.py  batch driver, real
 |-- export_fused_weighted.py         calibrate + fuse -> per-edge CSV
@@ -61,7 +61,7 @@ CPOR-grasp/
 |-- math/report_unobench.py          evaluation and reporting
 |-- grasp_viz/                       mask -> point cloud -> FGC-GraspNet -> renders
 |-- demo_rgbd/                       28 real RGB-D scenes + reference results
-|-- uoais-ft/                        UOAIS, fine-tuned
+|-- uoais-ft/                        UOAIS, fine-tuned, post-processing
 `-- FreeGrasp_code/                  FGC-GraspNet
 ```
 
