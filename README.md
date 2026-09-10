@@ -7,25 +7,10 @@ A VLM and an amodal segmenter each propose occlusion edges. Both sources are cal
 fused, the posterior is taken over acyclic occlusion graphs by Top-K MAP, and the free-set
 marginals come with an approximation certificate used to act or defer.
 
-```
-RGB-D
-  ├── Gemini ──────────► occlusion chain, p(edge)
-  └── UOAIS-FT  ──────────► amodal masks, p(edge) from contact / hidden area / depth order
-                              │
-                    adaptive Platt per source, then logit fusion          configs/pipeline.yaml
-                              │
-                    Top-K MAP over the acyclic support D
-                    exact enumeration, ILP with
-                    lazy acyclicity + no-good cuts (CBC)
-                              │
-                    free-set marginals q_o, q_X  +  certificate ε_K
-                    adaptive stopping: first K with ε_K ≤ ε_target,
-                    or an action margin already certified
-                              │
-                    τ_set = c_FP/(c_FP+c_FN),  τ_act = 1 − λ_defer  →  act or defer
-                              │
-  FGC-GraspNet on the chosen object ──────────────────────────────────► 6-DoF pose
-```
+<p align="center">
+  <img src="assets/CPOR.png" style="width: 95%; height: auto;" alt="reasoning" />
+</p>
+
 
 The calibration is fit once on synthetic data and used unchanged for synthetic evaluation, real
 evaluation and deployment. Nothing is refit or retrained per domain.
