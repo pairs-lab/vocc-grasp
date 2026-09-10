@@ -3,14 +3,9 @@
 Repository for CPOR-Grasp. Given an RGB-D frame and a free-form request, the method predicts
 which object must be removed first to reach the target, and returns a 6-DoF grasp for it.
 
-A VLM and an amodal segmenter each propose occlusion edges. Both sources are calibrated and
-fused, the posterior is taken over acyclic occlusion graphs by Top-K MAP, and the free-set
-marginals come with an approximation certificate used to act or defer.
-
 <p align="center">
   <img src="assets/CPOR.png" style="width: 95%; height: auto;" alt="reasoning" />
 </p>
-
 
 The calibration is fit once on synthetic data and used unchanged for synthetic evaluation, real
 evaluation and deployment. Nothing is refit or retrained per domain.
