@@ -31,7 +31,7 @@ cd math && python report_unobench.py --csv <the csv named in the section> --tau-
 ## UOAIS 3D (filtered edges)
 
 - source : logs/uoais_pipeline_1800/predictions.jsonl (1800 predictions)
-- command: /home/chien/miniconda3/bin/python evaluate_nlp.py --pred_path logs/uoais_pipeline_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
+- command: python evaluate_nlp.py --pred_path logs/uoais_pipeline_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
 
 ```text
 ========== Evaluation Summary ==========
@@ -72,7 +72,7 @@ _No per-object confidence in this log._
 ## UOAIS 3D (unfiltered edges, legacy)
 
 - source : logs/uoais_1800_legacy/predictions.jsonl (1800 predictions)
-- command: /home/chien/miniconda3/bin/python evaluate_nlp.py --pred_path logs/uoais_1800_legacy/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
+- command: python evaluate_nlp.py --pred_path logs/uoais_1800_legacy/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
 
 ```text
 ========== Evaluation Summary ==========
@@ -113,7 +113,7 @@ _No per-object confidence in this log._
 ## UnoGrasp
 
 - source : logs/unograsp_test_1800/predictions.jsonl (1800 predictions)
-- command: /home/chien/miniconda3/bin/python evaluate_nlp.py --pred_path logs/unograsp_test_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
+- command: python evaluate_nlp.py --pred_path logs/unograsp_test_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
 
 ```text
 ========== Evaluation Summary ==========
@@ -146,7 +146,7 @@ UnoGrasp only stores rendered `<think>/<answer>` text, with no per-edge or per-o
 ## Gemini (no 3D ref)
 
 - source : logs/gemini_noref_test_1800/predictions.jsonl (1800 predictions)
-- command: /home/chien/miniconda3/bin/python evaluate_nlp.py --pred_path logs/gemini_noref_test_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
+- command: python evaluate_nlp.py --pred_path logs/gemini_noref_test_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
 
 ```text
 ========== Evaluation Summary ==========
@@ -189,7 +189,7 @@ Balanced SR-F1 (Group-weighted) = 0.516
 ## Gemini + 3D ref
 
 - source : logs/gemini_uoais_ref_test_1800/predictions.jsonl (1800 predictions)
-- command: /home/chien/miniconda3/bin/python evaluate_nlp.py --pred_path logs/gemini_uoais_ref_test_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
+- command: python evaluate_nlp.py --pred_path logs/gemini_uoais_ref_test_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
 
 ```text
 ========== Evaluation Summary ==========
@@ -232,7 +232,7 @@ Balanced SR-F1 (Group-weighted) = 0.513
 ## GPT-4o (no 3D ref)
 
 - source : logs/gpt4o_noref_test_1800/predictions.jsonl (1800 predictions)
-- command: /home/chien/miniconda3/bin/python evaluate_nlp.py --pred_path logs/gpt4o_noref_test_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
+- command: python evaluate_nlp.py --pred_path logs/gpt4o_noref_test_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
 
 ```text
 ========== Evaluation Summary ==========
@@ -275,7 +275,7 @@ Balanced SR-F1 (Group-weighted) = 0.380
 ## GPT-4o + 3D ref
 
 - source : logs/gpt4o_uoaisref_test_1800/predictions.jsonl (1800 predictions)
-- command: /home/chien/miniconda3/bin/python evaluate_nlp.py --pred_path logs/gpt4o_uoaisref_test_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
+- command: python evaluate_nlp.py --pred_path logs/gpt4o_uoaisref_test_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
 
 ```text
 ========== Evaluation Summary ==========
@@ -318,7 +318,7 @@ Balanced SR-F1 (Group-weighted) = 0.413
 ## InternVL3.5-14B-4bit (no 3D ref)
 
 - source : logs/internvl3_5_14b_4bit_noref_test_1800/predictions.jsonl (1800 predictions)
-- command: /home/chien/miniconda3/bin/python evaluate_nlp.py --pred_path logs/internvl3_5_14b_4bit_noref_test_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
+- command: python evaluate_nlp.py --pred_path logs/internvl3_5_14b_4bit_noref_test_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
 
 ```text
 ========== Evaluation Summary ==========
@@ -361,7 +361,7 @@ Balanced SR-F1 (Group-weighted) = 0.287
 ## InternVL3.5-14B-4bit + 3D ref
 
 - source : logs/internvl3_5_14b_4bit_uoaisref_test_1800/predictions.jsonl (1800 predictions)
-- command: /home/chien/miniconda3/bin/python evaluate_nlp.py --pred_path logs/internvl3_5_14b_4bit_uoaisref_test_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
+- command: python evaluate_nlp.py --pred_path logs/internvl3_5_14b_4bit_uoaisref_test_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
 
 ```text
 ========== Evaluation Summary ==========
@@ -404,7 +404,7 @@ Balanced SR-F1 (Group-weighted) = 0.315
 ## Qwen3.5-9B-4bit (no 3D ref)
 
 - source : logs/qwen3_5_9b_4bit_noref_test_1800/predictions.jsonl (1800 predictions)
-- command: /home/chien/miniconda3/bin/python evaluate_nlp.py --pred_path logs/qwen3_5_9b_4bit_noref_test_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
+- command: python evaluate_nlp.py --pred_path logs/qwen3_5_9b_4bit_noref_test_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
 
 ```text
 ========== Evaluation Summary ==========
@@ -447,7 +447,7 @@ Balanced SR-F1 (Group-weighted) = 0.387
 ## Qwen3.5-9B-4bit + 3D ref
 
 - source : logs/qwen3_5_9b_4bit_uoaisref_test_1800/predictions.jsonl (1800 predictions)
-- command: /home/chien/miniconda3/bin/python evaluate_nlp.py --pred_path logs/qwen3_5_9b_4bit_uoaisref_test_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
+- command: python evaluate_nlp.py --pred_path logs/qwen3_5_9b_4bit_uoaisref_test_1800/predictions.jsonl --gt_path UnoBench/subset_difficulty/test_GT_small_1800.json --npz_root UnoBench/annotations --dataset_type synthetic --difficulty_field difficulty
 
 ```text
 ========== Evaluation Summary ==========
@@ -490,7 +490,7 @@ Balanced SR-F1 (Group-weighted) = 0.395
 ## D3G
 
 - source : d3g_unobench/output/pred_1800/results.jsonl (1800 predictions)
-- command: cd d3g_unobench && /home/chien/miniconda3/bin/python report_nlp_style.py --skip-selfcheck
+- command: cd d3g_unobench && python report_nlp_style.py --skip-selfcheck
 
 ```text
 === Easy ===
@@ -515,7 +515,7 @@ D3G stores `candidate_edges` with only `from`/`to` - it publishes no per-edge or
 ## VLM + math stack, t=0 (no edge filtering)
 
 - source : logs/edge_scores_csv_test1800_full/fused_adaptive_w0.5_0.5_m1.csv
-- command: cd math_run && /home/chien/miniconda3/bin/python report_unobench.py --csv ../logs/edge_scores_csv_test1800_full/fused_adaptive_w0.5_0.5_m1.csv --tau-edge 0.09
+- command: cd math_run && python report_unobench.py --csv ../logs/edge_scores_csv_test1800_full/fused_adaptive_w0.5_0.5_m1.csv --tau-edge 0.09
 
 ```text
 ========== Evaluation Summary ==========
@@ -558,7 +558,7 @@ Balanced SR-F1 (Group-weighted) = 0.722
 ## Qwen3.5-9B-4bit + 3D fused + math stack
 
 - source : logs/fused_qwen_uoaisref/fused_adaptive_w0.5_0.5_m1.csv
-- command: cd math_run && /home/chien/miniconda3/bin/python report_unobench.py --csv ../logs/fused_qwen_uoaisref/fused_adaptive_w0.5_0.5_m1.csv --tau-edge 0.09
+- command: cd math_run && python report_unobench.py --csv ../logs/fused_qwen_uoaisref/fused_adaptive_w0.5_0.5_m1.csv --tau-edge 0.09
 
 ```text
 ========== Evaluation Summary ==========
@@ -601,7 +601,7 @@ Balanced SR-F1 (Group-weighted) = 0.652
 ## InternVL3.5-14B-4bit + 3D fused + math stack
 
 - source : logs/fused_internvl_uoaisref/fused_adaptive_w0.5_0.5_m1.csv
-- command: cd math_run && /home/chien/miniconda3/bin/python report_unobench.py --csv ../logs/fused_internvl_uoaisref/fused_adaptive_w0.5_0.5_m1.csv --tau-edge 0.09
+- command: cd math_run && python report_unobench.py --csv ../logs/fused_internvl_uoaisref/fused_adaptive_w0.5_0.5_m1.csv --tau-edge 0.09
 
 ```text
 ========== Evaluation Summary ==========

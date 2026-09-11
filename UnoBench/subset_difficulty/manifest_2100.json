@@ -1,6 +1,6 @@
 {
-  "source_gt": "/media/chien/New Volume/free_grasp/UnoBench/gt_for_nlp.json",
-  "source_nlp": "/media/chien/New Volume/free_grasp/UnoBench/test_nlp_small.jsonl",
+  "source_gt": "UnoBench/gt_for_nlp.json",
+  "source_nlp": "UnoBench/test_nlp_small.jsonl",
   "selection": "first 350 ambiguous and first 350 non-ambiguous cases per old difficulty; final dataset preserves source order",
   "n": 2100,
   "unique_pairs": 2100,

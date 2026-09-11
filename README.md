@@ -14,8 +14,8 @@ evaluation and deployment. Nothing is refit or retrained per domain.
 
 | Resource | Link | Description |
 | --- | --- | --- |
-| Synthetic dataset | [Hugging Face](https://huggingface.co/datasets/chiencn/vocc_synthetic) | UnoBench `test_GT_small_1800` split: 1800 cases, 1400 images. |
-| Real dataset | [Hugging Face](https://huggingface.co/datasets/chiencn/vocc_real) | MetaGraspNet-V2 evaluation subset: 838 cases, 511 scenes. |
+| Synthetic dataset | [Hugging Face](https://huggingface.co/datasets/cpor-anon/CPOR_synthetic) | UnoBench `test_GT_small_1800` split: 1800 cases, 1400 images. |
+| Real dataset | [Hugging Face](https://huggingface.co/datasets/cpor-anon/CPOR_real) | MetaGraspNet-V2 evaluation subset: 838 cases, 511 scenes. |
 
 ## Contents
 
@@ -77,10 +77,10 @@ repository. Download them to regenerate predictions from raw RGB-D, or to run th
 
 ### Synthetic
 
-Download UnoBench from [Hugging Face](https://huggingface.co/datasets/chiencn/vocc_synthetic):
+Download UnoBench from [Hugging Face](https://huggingface.co/datasets/cpor-anon/CPOR_synthetic):
 
 ```bash
-hf download chiencn/CPOR_synthetic --repo-type dataset --local-dir /tmp/CPOR_syn
+hf download cpor-anon/CPOR_synthetic --repo-type dataset --local-dir /tmp/CPOR_syn
 
 mkdir -p UnoBench/_extracted
 for f in images depth annotations; do
@@ -102,10 +102,10 @@ CPOR-grasp/
 ### Real
 
 Download the MetaGraspNet-V2 subset from
-[Hugging Face](https://huggingface.co/datasets/chiencn/vocc_real):
+[Hugging Face](https://huggingface.co/datasets/cpor-anon/CPOR_real):
 
 ```bash
-hf download chiencn/CPOR_real --repo-type dataset --local-dir /tmp/CPOR_real
+hf download cpor-anon/CPOR_real --repo-type dataset --local-dir /tmp/CPOR_real
 
 for f in scenes images masks_crop masks_full; do
     tar -xzf /tmp/CPOR_real/$f.tar.gz -C .

@@ -8,7 +8,7 @@
 # torch 2.7.0+cu128 and CUDA 12.8.
 set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-ENV_NAME="${ENV_NAME:-vocc}"
+ENV_NAME="${ENV_NAME:-CPOR}"
 CONDA_ROOT="${CONDA_ROOT:-$HOME/miniconda3}"
 PY="$CONDA_ROOT/envs/$ENV_NAME/bin/python"
 
