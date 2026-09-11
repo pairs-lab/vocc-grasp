@@ -14,8 +14,8 @@ evaluation and deployment. Nothing is refit or retrained per domain.
 
 | Resource | Link | Description |
 | --- | --- | --- |
-| Synthetic dataset | [Hugging Face](https://huggingface.co/datasets/chiencn/CPOR_synthetic) | UnoBench `test_GT_small_1800` split: 1800 cases, 1400 images. |
-| Real dataset | [Hugging Face](https://huggingface.co/datasets/chiencn/CPOR_real) | MetaGraspNet-V2 evaluation subset: 838 cases, 511 scenes. |
+| Synthetic dataset | [Hugging Face](https://huggingface.co/datasets/) | UnoBench `test_GT_small_1800` split: 1800 cases, 1400 images. |
+| Real dataset | [Hugging Face](https://huggingface.co/datasets/) | MetaGraspNet-V2 evaluation subset: 838 cases, 511 scenes. |
 
 ## Contents
 
