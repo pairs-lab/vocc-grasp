@@ -42,12 +42,15 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from collections import defaultdict
 
 import numpy as np
 
-sys.path.insert(0, "..")
+# Repository root from the file's own location, so the cwd does not matter.
+_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, _ROOT)
 from evaluate_nlp import compute_prf, mp_ned, paths_to_triplets  # noqa: E402
 
 from freeset.decision.policy import DecisionConfig  # noqa: E402
@@ -55,8 +58,8 @@ from freeset.inference import graph_ops as G  # noqa: E402
 from freeset.io.csv_loader import load_scenes  # noqa: E402
 from freeset.pipeline import FreeSetPipeline, PipelineConfig  # noqa: E402
 
-GT = "../UnoBench/subset_difficulty/test_GT_small_1800.json"
-CSV = "../logs/edge_scores_csv_test1800_full/fused_adaptive_w0.5_0.5_m1.csv"
+GT = os.path.join(_ROOT, "UnoBench/subset_difficulty/test_GT_small_1800.json")
+CSV = os.path.join(_ROOT, "logs/edge_scores_csv_test1800_full/fused_adaptive_w0.5_0.5_m1.csv")
 MAX_PATHS = 64          # guard against path blow-up in a dense decoded DAG
 
 
