@@ -182,7 +182,7 @@ def run(args) -> None:
             # 1752/6467 = 0.27091387...; PRIOR here is that value rounded to six
             # decimals as specified, which moves every fused row by ~1.6e-7.
             assert worst < 5e-6, f"(1,1,-1) differs from 5_fused_adaptive.csv, max |delta| = {worst}"
-            print(f"[check] {out_path.name} khớp 5_fused_adaptive.csv, max |delta| = {worst:.1e} "
+            print(f"[check] {out_path.name} matches 5_fused_adaptive.csv, max |delta| = {worst:.1e} "
                   f"(only from rounding P(y) {PRIOR_GEMINI:.6f} vs {1752 / 6467:.10f})")
 
         counts = Counter(r["difficulty_level"] for r in rows)
